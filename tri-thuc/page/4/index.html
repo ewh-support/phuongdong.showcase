@@ -148,8 +148,8 @@
         var td_animation_stack_general_selectors =
             ".td-animation-stack img, .td-animation-stack .entry-thumb, .post img";
         var tds_general_modal_image = "yes";
-        var td_ajax_url = "http:\/\/vietnamtimes.info\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=8.0";
-        var td_get_template_directory_uri = "http:\/\/vietnamtimes.info\/wp-content\/themes\/Newspaper";
+        // var td_ajax_url = "http:\/\/vietnamtimes.info\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=8.0";
+        // var td_get_template_directory_uri = "http:\/\/vietnamtimes.info\/wp-content\/themes\/Newspaper";
         var tds_snap_menu = "";
         var tds_logo_on_sticky = "";
         var tds_header_style = "10";
@@ -247,37 +247,37 @@
                 });
             }
         });
-        (function() {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = 'http://vietnamtimes.info/wp-content/themes/Newspaper/style.css';
-                jQuery.get(path, function(data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path = 'http://vietnamtimes.info/wp-content/themes/Newspaper';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();</script><div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar"><header><a title="Editor" class="tdw-tab tdc-tab-active" href="#" data-tab-content="tdw-tab-editor">Edit with Live CSS</a><div class="tdw-less-info" title="This will be red when errors are detected in your CSS and LESS"></div></header><div class="tdw-content"><div class="tdw-tabs-content tdw-tab-editor tdc-tab-content-active"><script>(function(jQuery, undefined) {
+        // (function() {
+        //     var html_jquery_obj = jQuery('html');
+        //     if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
+        //         var path = 'http://vietnamtimes.info/wp-content/themes/Newspaper/style.css';
+        //         jQuery.get(path, function(data) {
+        //             var str_split_separator = '#td_css_split_separator';
+        //             var arr_splits = data.split(str_split_separator);
+        //             var arr_length = arr_splits.length;
+        //             if (arr_length > 1) {
+        //                 var dir_path = 'http://vietnamtimes.info/wp-content/themes/Newspaper';
+        //                 var splited_css = '';
+        //                 for (var i = 0; i < arr_length; i++) {
+        //                     if (i > 0) {
+        //                         arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
+        //                     }
+        //                     //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
+        //                     var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
+        //                         str) {
+        //                         return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
+        //                             /^\s+|\s+$/gm, '');
+        //                     });
+        //                     splited_css += "<style>" + formated_str + "</style>";
+        //                 }
+        //                 var td_theme_css = jQuery('link#td-theme-css');
+        //                 if (td_theme_css.length) {
+        //                     td_theme_css.after(splited_css);
+        //                 }
+        //             }
+        //         });
+        //     }
+        // })();</script><div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar"><header><a title="Editor" class="tdw-tab tdc-tab-active" href="#" data-tab-content="tdw-tab-editor">Edit with Live CSS</a><div class="tdw-less-info" title="This will be red when errors are detected in your CSS and LESS"></div></header><div class="tdw-content"><div class="tdw-tabs-content tdw-tab-editor tdc-tab-content-active"><script>(function(jQuery, undefined) {
                         jQuery(window).ready(function() {
                             if ('undefined' !== typeof tdcAdminIFrameUI) {
                                 var $liveIframe = tdcAdminIFrameUI.getLiveIframe();

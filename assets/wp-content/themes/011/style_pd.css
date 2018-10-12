@@ -1051,7 +1051,7 @@
             border-color: #24180b transparent transparent transparent;
         } */
         
-        /* .td-theme-wrap .block-title>span,
+        .td-theme-wrap .block-title>span,
         .td-theme-wrap .block-title>span>a,
         .td-theme-wrap .widget_rss .block-title .rsswidget,
         .td-theme-wrap .block-title>a,
@@ -1090,9 +1090,9 @@
         .td-theme-wrap .td_block_template_16 .td-block-title>*,
         .td-theme-wrap .td_block_template_17 .td-block-title>* {
             color: #84683b;
-        } */
+        }
         
-        /* .td-theme-wrap .td-mega-menu ul,
+        .td-theme-wrap .td-mega-menu ul,
         .td-theme-wrap .td_mega_menu_sub_cats .cur-sub-cat,
         .td-theme-wrap .td_mega_menu_sub_cats .cur-sub-cat:before {
             background-color: #efe8da;
@@ -1128,9 +1128,9 @@
             .td-header-wrap .header-search-wrap .td-icon-search {
                 color: #000000 !important;
             }
-        } */
+        }
         
-        /* .td-menu-background:before,
+        .td-menu-background:before,
         .td-search-background:before {
             background: #e6ded2;
             background: -moz-linear-gradient(top, #e6ded2 0%, #e6ded2 100%);
@@ -1198,8 +1198,8 @@
         .mfp-content .td-login-button:hover {
             background-color: #e6ded2;
         }
-         */
-        /* .white-popup-block:after {
+        
+        .white-popup-block:after {
             background: rgba(132, 104, 59, 0.95);
             background: -moz-linear-gradient(45deg, rgba(132, 104, 59, 0.95) 0%, rgba(132, 104, 59, 0.85) 100%);
             background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(132, 104, 59, 0.95)), color-stop(100%, rgba(132, 104, 59, 0.85)));
@@ -1208,9 +1208,9 @@
             background: -ms-linear-gradient(45deg, rgba(132, 104, 59, 0.95) 0%, rgba(132, 104, 59, 0.85) 100%);
             background: linear-gradient(45deg, rgba(132, 104, 59, 0.95) 0%, rgba(132, 104, 59, 0.85) 100%);
             filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='rgba(132,104,59,0.95)', endColorstr='rgba(132,104,59,0.85)', GradientType=0);
-        } */
+        }
         
-        /* .td-footer-wrapper,
+        .td-footer-wrapper,
         .td-footer-wrapper a,
         .td-footer-wrapper .block-title a,
         .td-footer-wrapper .block-title span,
@@ -1388,7 +1388,7 @@
         .td-sub-footer-menu ul li a {
             font-family: "PT Serif";
         }
-         */
+        
         body,
         p {
             font-family: "PT Serif";
