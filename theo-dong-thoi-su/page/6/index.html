@@ -35,7 +35,7 @@
     <link rel="dns-prefetch" href="//s.w.org" />
     <script type="text/javascript" src="/assets/wp-includes/js/axios.min.js"></script>
     <script type="text/javascript" src="/assets/wp-includes/js/vue.min.js"></script>
-    <script>
+    <!-- <script>
         window.onload = function () {
             var vue = new Vue({
                 el: '#vue-app',
@@ -84,7 +84,7 @@
                                 }
                             }
                         };
-                        let res = await axios.get('http://178.128.52.111:6400/api/BaiViets', {
+                        let res = await axios.get('', {
                             params: input
                         });
                         // console.log('res', res);
@@ -101,7 +101,7 @@
                 }
             });
         }
-    </script>
+    </script> -->
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
@@ -475,13 +475,13 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-0" class="menu-item-0">
-                                        <a href="/kinh-te">Kinh Tế</a>
+                                        <a href="/theo-dong-thoi-su/kinh-te">Kinh Tế</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/xa-hoi">Xã Hội</a>
+                                        <a href="/theo-dong-thoi-su/xa-hoi">Xã Hội</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/phap-luat">Pháp Luật</a>
+                                        <a href="/theo-dong-thoi-su/phap-luat">Pháp Luật</a>
                                     </li>
     
                                 </ul>
@@ -852,38 +852,266 @@
                 <!-- content -->
                 <div class="td-pb-row">
                     <div class="td-pb-span8 td-main-content">
-                        <div id="vue-app">
-                            <div class="td-ss-main-content">
-                                <div class="td_module_10 td_module_wrap td-animation-stack" v-for="item of items">
-                                    <div class="td-module-image">
-                                        <div class="td-module-thumb">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="">
-                                                <img class="entry-thumb td-animation-stack-type0-2 style-img-h150-dtg"
-                                                    v-bind:src="item.anhDaiDien" alt="" title="" />
-                                            </a>
-                                        </div>
-                                        <a class="td-post-category" v-bind:href="getHref(item.category)" rel="tag"
-                                            v-html="getNameCategory(item.category)">
+                        <div class="td-ss-main-content">
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/doc-sach-de-bao-dung-hon" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/doc-sach.jpg"  alt="" title="" />
                                         </a>
                                     </div>
-                                    <div class="item-details">
-                                        <h3 class="entry-title td-module-title">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="" v-html="item.title"></a>
-                                        </h3>
-
-                                        <div class="td-module-meta-info">
-                                            <span class="td-post-date">
-                                                <time class="entry-date updated td-module-date" datetime=""></time>
-                                            </span>
-                                        </div>
-                                        <div class="td-excerpt" v-html="item.moTaNgan"></div>
-                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
                                 </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/doc-sach-de-bao-dung-hon" rel="bookmark" title="">Đọc sách để bao dung hơn</a>
+                                    </h3>
 
-                                <!-- <div class="page-nav td-pb-padding-side">
-                                    <a v-on:click="prevButton()"><i class="td-icon-menu-left"></i> Trang trước</a>
-                                    <a v-on:click="nextButton()">Trang kế <i class="td-icon-menu-right"></i></a>
-                                </div> -->
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 04 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Làm nghề nào cũng vậy, đọc sách chính là cách để chúng ta đi sâu hơn vào những bí ẩn cuộc đời mà không chỉ đóng vai người khám phá, chúng ta đã dự phần vào đó.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/con-duong-to-lua-moi-cua-trung-quoc-bat-dau-gap-ghenh" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/con-duong-to-lua_jmpu.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/con-duong-to-lua-moi-cua-trung-quoc-bat-dau-gap-ghenh" rel="bookmark" title="">‘Con đường tơ lụa mới’ của Trung Quốc bắt đầu gập ghềnh</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 04 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Dự án “Vành đai và Con đường” đang đi vào giai đoạn gập ghềnh khi một số nước bắt đầu cảm thấy sức nặng từ núi nợ Trung Quốc.
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/tieng-viet-cong-nghe-giao-duc-tranh-cai-vi-dau" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/cong-nghe-giao-duc.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/tieng-viet-cong-nghe-giao-duc-tranh-cai-vi-dau" rel="bookmark" title="">Tiếng Việt công nghệ giáo dục: tranh cãi vì đâu?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 04 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Dư luận mấy ngày nay xôn xao về một clip dạy đánh vần 'lạ' thật ra là của chương trình công nghệ giáo dục đã tồn tại mấy mươi năm qua. 
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/go-jek-va-grab-gianh-giat-thi-truong-indonesia-ra-sao" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/grab.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/go-jek-va-grab-gianh-giat-thi-truong-indonesia-ra-sao" rel="bookmark" title="">Go-Jek và Grab giành giật thị trường Indonesia ra sao?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 03 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Indonesia là chiến trường chính của hai startup tỷ USD của Đông Nam Á khi đây là thị trường duy nhất mà Grab chưa nắm trọn trong tay vì Go-Jek vẫn đang dẫn đầu.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/meo-quan-ly-tien-cua-gioi-sieu-giau" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/buffett-2064-1535706676.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/meo-quan-ly-tien-cua-gioi-sieu-giau" rel="bookmark" title="">Mẹo quản lý tiền của giới siêu giàu</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 03 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tiết kiệm, trả hết nợ, đầu tư... đều là thói quen chi tiêu của Warren Buffett, Kevin O'Leary hay Mark Cuban.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/tieng-viet-cong-nghe-giao-duc-vi-sao-3-chu-ckq-deu-doc-la-co" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/tieng-viet-cong-nghe-giao-duc-vi-sao-3-chu-c-k-q-deu-doc-la-co.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/tieng-viet-cong-nghe-giao-duc-vi-sao-3-chu-ckq-deu-doc-la-co" rel="bookmark" title="">Tiếng Việt Công nghệ Giáo dục: Vì sao 3 chữ c/k/q đều đọc là &quot;cờ&quot;?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ bảy, 01 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Trao đổi với VietNamNet, ông Nguyễn Văn Luỹ, Giám đốc Trung tâm Công nghệ Giáo dục (CNGD) NXB Giáo dục Việt Nam, đơn vị biên soạn sách Tiếng Việt lớp 1 của giải pháp Công nghệ Giáo dục (CNGD) cho hay, mục tiêu của bộ môn là học sinh phải đọc thông, viết thạo; nắm vững cấu trúc ngữ âm của tiếng, luật chính tả, từ đó học sinh không thể tái mù.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/trung-quoc-vung-tien-thau-tom-khap-the-gioi" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/FotoArticulo4.jpeg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/trung-quoc-vung-tien-thau-tom-khap-the-gioi" rel="bookmark" title="">Trung Quốc vung tiền thâu tóm khắp thế giới</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ bảy, 01 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Nước này đang đẩy mạnh đầu tư ra nước ngoài với làn sóng thâu tóm lớn chưa từng thấy, bất chấp các biện pháp hạn chế của chính phủ cũng như cảnh giác của các nước nhận đầu tư.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/mai-moi-cung-can-chuyen-nghiep" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/ket-noi-thi-truong.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/mai-moi-cung-can-chuyen-nghiep" rel="bookmark" title="">Mai mối cũng cần chuyên nghiệp</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 31 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tuần lễ “Hàng Việt và du lịch Việt ở Thái” do Central Group kết hợp với Bộ Công Thương Việt Nam tổ chức đã kết thúc. Nhiều người sẽ hỏi về số liệu và kết quả. Riêng tôi, ghi nhận một điều khác, có ích cho hoạt động xúc tiến thị trường thế giới của doanh nghiệp Việt Nam: tính chuyên nghiệp trong tổ chức kết nối.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/con-gai-dr-thanh-tiet-lo-chuyen-tan-hiep-phat-tu-choi-25-ty-usd-cua-coca-cola" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/tran-uyen-phuong-15356599664731960358241.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/con-gai-dr-thanh-tiet-lo-chuyen-tan-hiep-phat-tu-choi-25-ty-usd-cua-coca-cola" rel="bookmark" title="">Con gái Dr Thanh tiết lộ chuyện Tân Hiệp Phát từ chối 2,5 tỷ USD của Coca-Cola</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 31 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Vào giai đoạn đen tối nhất trong lịch sử kinh doanh tại Việt Nam, Coca Cola đã đề nghị mua cổ phần chi phối tại Tân Hiệp Phát với số tiền 2,5 tỷ USD từ ông Trần Quí Thanh và gia đình. Tuy nhiên, ông Thanh đã từ chối thương vụ lịch sử đó.
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/con-cung-van-chua-la-con-cung" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/con-cung.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/con-cung-van-chua-la-con-cung" rel="bookmark" title="">Con Cưng vẫn chưa là con cưng!</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 30 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Người ta vẫn than phiền chuyện doanh nghiệp kinh doanh giống như gà, vịt. Khi mới đầu tư làm ăn, buôn bán thì QLTT, thuế… sẽ để yên, nhưng cứ đến lúc béo tốt là bị “vặt lông”. Tại sao vậy?
+
+</div>
+                                </div>
+                            </div>
+
+                            <div class="page-nav td-pb-padding-side">
+                                <a href="/theo-dong-thoi-su/page/5"><i class="td-icon-menu-left"></i> Trang trước</a>  
+                                <a href="/theo-dong-thoi-su/page/7">Trang kế <i class="td-icon-menu-right"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -1123,37 +1351,7 @@
                 });
             }
         });
-        (function () {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = '';
-                jQuery.get(path, function (data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path = '';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();
+    
     </script>
     <div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar">
         <header>

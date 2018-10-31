@@ -35,7 +35,7 @@
     <link rel="dns-prefetch" href="//s.w.org" />
     <script type="text/javascript" src="/assets/wp-includes/js/axios.min.js"></script>
     <script type="text/javascript" src="/assets/wp-includes/js/vue.min.js"></script>
-    <script>
+    <!-- <script>
         window.onload = function () {
             var vue = new Vue({
                 el: '#vue-app',
@@ -84,7 +84,7 @@
                                 }
                             }
                         };
-                        let res = await axios.get('http://178.128.52.111:6400/api/BaiViets', {
+                        let res = await axios.get('', {
                             params: input
                         });
                         // console.log('res', res);
@@ -101,7 +101,7 @@
                 }
             });
         }
-    </script>
+    </script> -->
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
@@ -475,13 +475,13 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-0" class="menu-item-0">
-                                        <a href="/kinh-te">Kinh Tế</a>
+                                        <a href="/theo-dong-thoi-su/kinh-te">Kinh Tế</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/xa-hoi">Xã Hội</a>
+                                        <a href="/theo-dong-thoi-su/xa-hoi">Xã Hội</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/phap-luat">Pháp Luật</a>
+                                        <a href="/theo-dong-thoi-su/phap-luat">Pháp Luật</a>
                                     </li>
     
                                 </ul>
@@ -852,38 +852,270 @@
                 <!-- content -->
                 <div class="td-pb-row">
                     <div class="td-pb-span8 td-main-content">
-                        <div id="vue-app">
-                            <div class="td-ss-main-content">
-                                <div class="td_module_10 td_module_wrap td-animation-stack" v-for="item of items">
-                                    <div class="td-module-image">
-                                        <div class="td-module-thumb">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="">
-                                                <img class="entry-thumb td-animation-stack-type0-2 style-img-h150-dtg"
-                                                    v-bind:src="item.anhDaiDien" alt="" title="" />
-                                            </a>
-                                        </div>
-                                        <a class="td-post-category" v-bind:href="getHref(item.category)" rel="tag"
-                                            v-html="getNameCategory(item.category)">
+                        <div class="td-ss-main-content">
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/co-phieu-cong-nghe-dua-chung-khoan-my-lap-ky-luc-moi" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/kinh-te-my.jpg"  alt="" title="" />
                                         </a>
                                     </div>
-                                    <div class="item-details">
-                                        <h3 class="entry-title td-module-title">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="" v-html="item.title"></a>
-                                        </h3>
-
-                                        <div class="td-module-meta-info">
-                                            <span class="td-post-date">
-                                                <time class="entry-date updated td-module-date" datetime=""></time>
-                                            </span>
-                                        </div>
-                                        <div class="td-excerpt" v-html="item.moTaNgan"></div>
-                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
                                 </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/co-phieu-cong-nghe-dua-chung-khoan-my-lap-ky-luc-moi" rel="bookmark" title="">Cổ phiếu công nghệ đưa chứng khoán Mỹ lập kỷ lục mới</a>
+                                    </h3>
 
-                                <!-- <div class="page-nav td-pb-padding-side">
-                                    <a v-on:click="prevButton()"><i class="td-icon-menu-left"></i> Trang trước</a>
-                                    <a v-on:click="nextButton()">Trang kế <i class="td-icon-menu-right"></i></a>
-                                </div> -->
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 30 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Thị trường chứng khoán Mỹ tiếp tục tăng điểm trong phiên giao dịch ngày 29/8, với hai chỉ số S&P 500 và Nasdaq đạt mức cao chưa từng thấy phiên thứ tư liên tiếp, nhờ cổ phiếu các hãng công nghệ tăng và thông tin tích cực mới về đàm phán thương mại.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/lang-gieng-hoang-mang-vi-dong-nguoi-di-cu-venezuela-qua-lon" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/Venezuela-di-cu.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/lang-gieng-hoang-mang-vi-dong-nguoi-di-cu-venezuela-qua-lon" rel="bookmark" title="">Láng giềng hoang mang vì dòng người di cư Venezuela quá lớn</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 30 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Brazil ngày 28/8 cho biết sẽ đưa quân đội đến giữ trật tự tại khu vực biên giới, trong khi Peru tuyên bố tình trạng khẩn cấp về y tế. Các nước Nam Mỹ đang hết sức lo ngại về dòng người di cư khổng lồ từ Venezuela, quốc gia chìm sâu trong khủng hoảng kinh tế-chính trị.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/chien-tranh-thuong-mai-khien-nguoi-my-giam-thien-cam-voi-trung-quoc" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/chien-tranh-thuong-mai.JPG"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/chien-tranh-thuong-mai-khien-nguoi-my-giam-thien-cam-voi-trung-quoc" rel="bookmark" title="">Chiến tranh thương mại khiến người Mỹ giảm thiện cảm với Trung Quốc</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 30 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Người Mỹ có cái nhìn kém tích cực hơn về Trung Quốc trong bối cảnh cuộc chiến thương mại giữa hai nước leo thang, đồng thời lo ngại nhiều hơn về ảnh hưởng kinh tế ngày càng lớn của Bắc Kinh - tờ Bưu điện Hoa Nam buổi sáng (SCMP) dẫn kết quả một cuộc khảo sát mới của Trung tâm Nghiên cứu Pew có trụ sở ở Washington cho hay.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/ngheo-gioi-va-cong-bang" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/co-may.JPG"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/ngheo-gioi-va-cong-bang" rel="bookmark" title="">Nghèo, giỏi và công bằng</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 30 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Sáng chủ nhật tuần rồi, tôi được tham dự buổi xét chọn tân sinh viên cho ký túc xá (KTX) Cỏ May, diễn ra thật ấm áp, cảm động. Cuối buổi, mọi người bất ngờ rủ chị Oanh cùng chụp chung bức ảnh bên chân dung ông Phạm Văn Bên và lúc ấy, thoáng nhìn ảnh ông, tôi bỗng thấy nét mặt ông hình như có tươi hơn một chút. </div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/thoa-thuan-thuong-mai-my-mexico-tin-xau-cho-trung-quoc" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/my-mexico.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/thoa-thuan-thuong-mai-my-mexico-tin-xau-cho-trung-quoc" rel="bookmark" title="">Thỏa thuận thương mại Mỹ-Mexico, tin xấu cho Trung Quốc?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 28 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Giới phân tích cho rằng thỏa thuận Mỹ-Mexico “củng cố vị thế của Mỹ trong cuộc chơi cứng rắn với Trung Quốc”... Việc Tổng thống Donald Trump vừa giành được một thắng lợi chính trị dưới dạng một thỏa thuận thương mại với Mexico được xem là một tín hiệu cho thấy cuộc chiến thương mại Mỹ-Trung sẽ còn kéo dài - CNBC nhận định.
+
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/tim-cook-vua-hao-phong-cho-5-trieu-usd-lam-tu-thien" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/Tim-Cook.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/tim-cook-vua-hao-phong-cho-5-trieu-usd-lam-tu-thien" rel="bookmark" title="">Tim Cook vừa hào phóng cho 5 triệu USD làm từ thiện</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 28 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">CEO Apple vừa tuyên bố quyên góp gần 5 triệu USD cổ phiếu Apple cho các hoạt động từ thiện.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/my-chi-gan-5-ty-usd-bu-tac-dong-thue-quan-cho-nong-dan" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/nong-dan-my.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/my-chi-gan-5-ty-usd-bu-tac-dong-thue-quan-cho-nong-dan" rel="bookmark" title="">Mỹ chi gần 5 tỷ USD bù tác động thuế quan cho nông dân</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 28 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Trong số tiền nói trên, 3,6 tỷ USD sẽ được dành cho nông dân trồng đậu tương...
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/ong-trump-gio-khong-phai-luc-dam-phan-thuong-mai-voi-trung-quoc" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/trump.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/ong-trump-gio-khong-phai-luc-dam-phan-thuong-mai-voi-trung-quoc" rel="bookmark" title="">Ông Trump: Giờ không phải lúc đàm phán thương mại với Trung Quốc</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 28 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">“Vấn đề nằm ở chỗ giờ không phải là thời điểm phù hợp để đàm phán, nhất là với Trung Quốc”, ông Trump nói...
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/mot-the-he-luoi-bieng-dang-hinh-thanh-o-viet-nam" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/luoi-bieng.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/mot-the-he-luoi-bieng-dang-hinh-thanh-o-viet-nam" rel="bookmark" title="">Một thế hệ lười biếng đang hình thành ở Việt Nam </a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 24 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">“Giàu đâu đến kẻ ngủ trưa. Sang đâu đến kẻ say sưa tối ngày”, đến bây giờ ngẫm lại vẫn thấy câu tục ngữ này đúng. Và có lẽ muôn đời đúng. Tuy nhiên, đáng buồn là những thành phần như vậy trong xã hội ngày càng nhiều, đặc biệt là giới trẻ, lớp người tưởng như “tuổi 17 bẻ gãy sừng trâu”.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/dat-khong-the-su-dung-vo-toi-va" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/ts-pham-sy-liem-reatimes-1532713799.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/dat-khong-the-su-dung-vo-toi-va" rel="bookmark" title=""> Đất - không thể sử dụng vô tội vạ</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 24 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Cuộc chuyển đổi đất nông nghiệp thành phi nông nghiệp là một quá trình tất yếu. Nhưng chúng ta nên chú ý rằng đây là sự chuyển đổi đơn chiều không thể quay lại được, nếu ngày nào đó nhận ra sai lầm.</div>
+                                </div>
+                            </div>
+
+                            <div class="page-nav td-pb-padding-side">
+                                <a href="/theo-dong-thoi-su/page/6"><i class="td-icon-menu-left"></i> Trang trước</a>  
+                                <a href="/theo-dong-thoi-su/page/8">Trang kế <i class="td-icon-menu-right"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -1123,37 +1355,7 @@
                 });
             }
         });
-        (function () {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = '';
-                jQuery.get(path, function (data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path = '';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();
+    
     </script>
     <div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar">
         <header>

@@ -35,7 +35,7 @@
     <link rel="dns-prefetch" href="//s.w.org" />
     <script type="text/javascript" src="/assets/wp-includes/js/axios.min.js"></script>
     <script type="text/javascript" src="/assets/wp-includes/js/vue.min.js"></script>
-    <script>
+    <!-- <script>
         window.onload = function () {
             var vue = new Vue({
                 el: '#vue-app',
@@ -84,7 +84,7 @@
                                 }
                             }
                         };
-                        let res = await axios.get('http://178.128.52.111:6400/api/BaiViets', {
+                        let res = await axios.get('', {
                             params: input
                         });
                         // console.log('res', res);
@@ -101,7 +101,7 @@
                 }
             });
         }
-    </script>
+    </script> -->
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
@@ -475,13 +475,13 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-0" class="menu-item-0">
-                                        <a href="/kinh-te">Kinh Tế</a>
+                                        <a href="/theo-dong-thoi-su/kinh-te">Kinh Tế</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/xa-hoi">Xã Hội</a>
+                                        <a href="/theo-dong-thoi-su/xa-hoi">Xã Hội</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/phap-luat">Pháp Luật</a>
+                                        <a href="/theo-dong-thoi-su/phap-luat">Pháp Luật</a>
                                     </li>
     
                                 </ul>
@@ -852,38 +852,281 @@
                 <!-- content -->
                 <div class="td-pb-row">
                     <div class="td-pb-span8 td-main-content">
-                        <div id="vue-app">
-                            <div class="td-ss-main-content">
-                                <div class="td_module_10 td_module_wrap td-animation-stack" v-for="item of items">
-                                    <div class="td-module-image">
-                                        <div class="td-module-thumb">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="">
-                                                <img class="entry-thumb td-animation-stack-type0-2 style-img-h150-dtg"
-                                                    v-bind:src="item.anhDaiDien" alt="" title="" />
-                                            </a>
-                                        </div>
-                                        <a class="td-post-category" v-bind:href="getHref(item.category)" rel="tag"
-                                            v-html="getNameCategory(item.category)">
+                        <div class="td-ss-main-content">
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/nu-nha-van-goc-viet-duoc-de-cu-giai-nobel-van-chuong-thay-the" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/22a_ppfg.jpg"  alt="" title="" />
                                         </a>
                                     </div>
-                                    <div class="item-details">
-                                        <h3 class="entry-title td-module-title">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="" v-html="item.title"></a>
-                                        </h3>
-
-                                        <div class="td-module-meta-info">
-                                            <span class="td-post-date">
-                                                <time class="entry-date updated td-module-date" datetime=""></time>
-                                            </span>
-                                        </div>
-                                        <div class="td-excerpt" v-html="item.moTaNgan"></div>
-                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
                                 </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/nu-nha-van-goc-viet-duoc-de-cu-giai-nobel-van-chuong-thay-the" rel="bookmark" title="">Nữ nhà văn gốc Việt được đề cử giải Nobel Văn chương thay thế</a>
+                                    </h3>
 
-                                <!-- <div class="page-nav td-pb-padding-side">
-                                    <a v-on:click="prevButton()"><i class="td-icon-menu-left"></i> Trang trước</a>
-                                    <a v-on:click="nextButton()">Trang kế <i class="td-icon-menu-right"></i></a>
-                                </div> -->
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 24 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Nữ nhà văn Canada gốc Việt Kim Thúy trở thành 1 trong 4 người được đề cử cho giải Văn học mới, thay thế Nobel Văn chương bị hoãn năm nay.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/ubnd-tphcm-xin-loi-nguoi-dan-thu-thiem" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/ong-Hoan-5344-1537496098_600x0.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/ubnd-tphcm-xin-loi-nguoi-dan-thu-thiem" rel="bookmark" title="">UBND TP.HCM xin lỗi người dân Thủ Thiêm</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 21 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">“Thành phố chân thành xin lỗi nhân dân thành phố, nhất là các hộ dân bị ảnh hưởng tại khu vực 4,3 ha ngoài ranh quy hoạch khộng thuộc Khu phố 1, phường Bình An, quận 2 đã chịu nhiều thiệt thòi, tổn thất, vất vả trong cuộc sống nhiều năm qua”, ông Võ Minh Hoan chánh văn phòng UBND TP.HCM nói.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/thu-thiem-6-buoc-tphcm-se-lam-sau-ket-luan-cua-thanh-tra-chinh-phu" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/ban-do-mat-bang-8900-152567010-6058-5960-1536804251.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/thu-thiem-6-buoc-tphcm-se-lam-sau-ket-luan-cua-thanh-tra-chinh-phu" rel="bookmark" title="">Thủ Thiêm: 6 bước TP.HCM sẽ làm sau kết luận của Thanh tra Chính phủ</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 21 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tại buổi họp báo sáng 21/9, Chánh văn phòng UBND TP.HCM Võ Văn Hoan đã công khai 6 bước TP.HCM sẽ làm sau kết luận của Thanh tra Chính phủ đối với khu đô thị Thủ Thiêm.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/cac-cong-ty-chau-a-cheo-chong-the-nao-truoc-cuoc-chien-thuong-mai" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/thuong-chien.png"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/cac-cong-ty-chau-a-cheo-chong-the-nao-truoc-cuoc-chien-thuong-mai" rel="bookmark" title="">Các công ty châu Á chèo chống thế nào trước cuộc chiến thương mại</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 21 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Viễn cảnh thuế quan tăng thêm nữa đang thúc đẩy các công ty chuyển thêm các nhà máy từ Trung Quốc sang các nước có chi phí thấp hơn ở châu Á.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/canh-tranh-va-bai-toan-lon" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/dsc03703-1510011465865.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/canh-tranh-va-bai-toan-lon" rel="bookmark" title="">Cạnh tranh và bài toán lớn</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 19 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Câu chuyện cạnh tranh sản phẩm Việt tuần này sẽ gồm ba mẩu chuyện, từ nhạc kịch Tiên Nga, đến con cá tra, rau quả hữu cơ…
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/muon-lon-phai-biet-nhin-xa-hon" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/Caesar-Sengupta-768x1152.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/muon-lon-phai-biet-nhin-xa-hon" rel="bookmark" title="">Muốn lớn, phải biết nhìn xa hơn!</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 19 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tham dự Diễn đàn kinh tế thế giới khu vực ASEAN vừa được tổ chức tại Hà Nội, từ ngày 11 – 13/9/2018, ông Caesar Sengupta có bài viết về vai trò của cộng đồng doanh nghiệp vừa và nhỏ (SMB) khu vực ASEAN trong hiện tại và tương lai.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/cuoc-hoi-ngo-gia-dinh-hoang-gia-patel-hay-chuyen-mot-nguoi-nhap-cu-goc-an" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/0-768x512.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/cuoc-hoi-ngo-gia-dinh-hoang-gia-patel-hay-chuyen-mot-nguoi-nhap-cu-goc-an" rel="bookmark" title="">‘Cuộc hội ngộ gia đình Hoàng gia Patel’ hay chuyện một người nhập cư gốc Ấn</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 19 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Jagdish Patel đến Mỹ vào năm 1968 khi ông 23 tuổi, bây giờ ông có ngôi nhà được thiết kế riêng ở Las Vegas, bao gồm rạp hát gia đình, nơi ông tổ chức các bữa tiệc Super Bowl và ngôi đền Hindu bằng đá cẩm thạch.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/hanh-trang-duong-dai" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/khoi-nghiep-nong-nghiep.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/hanh-trang-duong-dai" rel="bookmark" title="">Hành trang đường dài</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Chủ nhật, 16 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Chiều chủ nhật 9/9/2018, tôi đến văn phòng BSA dự buổi hướng dẫn các dự án khởi nghiệp chuẩn bị trình bày tại vòng bán kết sắp diễn ra ở TP.HCM. Thấy có nhiều bạn khởi nghiệp từ Đồng Tháp, Huế, Ninh Thuận, Cà Mau…
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/boi-chi-cao-no-cong-tang-tien-dau-cho-doi-moi-giao-duc" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/pct-phung-quoc-hien-ok-1536760870162156204925-40-0-478-780-crop-1536760876079424315588.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/boi-chi-cao-no-cong-tang-tien-dau-cho-doi-moi-giao-duc" rel="bookmark" title="">Bội chi cao, nợ công tăng, tiền đâu cho đổi mới giáo dục?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 14 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Trong khi đang mất cân đối về ngân sách, bội chi ngày càng cao, nợ công tăng thì sẽ xử lý nguồn lực cho chính sách mới về giáo dục như thế nào? Đó là câu hỏi được Phó chủ tịch Quốc hội Phùng Quốc Hiển đặt ra khi Uỷ ban Thường vụ Quốc hội cho ý kiến về dự án Luật Giáo dục (sửa đổi), ngày 12/9. 
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/trung-quoc-doi-mat-voi-su-co-lap-cua-cac-dong-minh-g7" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/0.png"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/trung-quoc-doi-mat-voi-su-co-lap-cua-cac-dong-minh-g7" rel="bookmark" title="">Trung Quốc đối mặt với sự cô lập của các ‘đồng minh’ G7</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 13 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Bắc Kinh đã từng ủng hộ các tranh chấp của Mỹ với Tokyo và Brussels nhưng bây giờ phải đối mặt với sự cô lập khi các đồng minh G7 bắt đầu điều phối chính sách.
+
+</div>
+                                </div>
+                            </div>
+
+                            <div class="page-nav td-pb-padding-side">
+                                <a href="/theo-dong-thoi-su/page/2"><i class="td-icon-menu-left"></i> Trang trước</a>  
+                                <a href="/theo-dong-thoi-su/page/4">Trang kế <i class="td-icon-menu-right"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -1123,37 +1366,7 @@
                 });
             }
         });
-        (function () {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = '';
-                jQuery.get(path, function (data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path = '';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();
+    
     </script>
     <div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar">
         <header>

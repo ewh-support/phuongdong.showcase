@@ -35,7 +35,7 @@
     <link rel="dns-prefetch" href="//s.w.org" />
     <script type="text/javascript" src="/assets/wp-includes/js/axios.min.js"></script>
     <script type="text/javascript" src="/assets/wp-includes/js/vue.min.js"></script>
-    <script>
+    <!-- <script>
         window.onload = function () {
             var vue = new Vue({
                 el: '#vue-app',
@@ -84,7 +84,7 @@
                                 }
                             }
                         };
-                        let res = await axios.get('http://178.128.52.111:6400/api/BaiViets', {
+                        let res = await axios.get('', {
                             params: input
                         });
                         // console.log('res', res);
@@ -101,7 +101,7 @@
                 }
             });
         }
-    </script>
+    </script> -->
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
@@ -475,13 +475,13 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-0" class="menu-item-0">
-                                        <a href="/kinh-te">Kinh Tế</a>
+                                        <a href="/theo-dong-thoi-su/kinh-te">Kinh Tế</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/xa-hoi">Xã Hội</a>
+                                        <a href="/theo-dong-thoi-su/xa-hoi">Xã Hội</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/phap-luat">Pháp Luật</a>
+                                        <a href="/theo-dong-thoi-su/phap-luat">Pháp Luật</a>
                                     </li>
     
                                 </ul>
@@ -852,38 +852,262 @@
                 <!-- content -->
                 <div class="td-pb-row">
                     <div class="td-pb-span8 td-main-content">
-                        <div id="vue-app">
-                            <div class="td-ss-main-content">
-                                <div class="td_module_10 td_module_wrap td-animation-stack" v-for="item of items">
-                                    <div class="td-module-image">
-                                        <div class="td-module-thumb">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="">
-                                                <img class="entry-thumb td-animation-stack-type0-2 style-img-h150-dtg"
-                                                    v-bind:src="item.anhDaiDien" alt="" title="" />
-                                            </a>
-                                        </div>
-                                        <a class="td-post-category" v-bind:href="getHref(item.category)" rel="tag"
-                                            v-html="getNameCategory(item.category)">
+                        <div class="td-ss-main-content">
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/ca-phe-sang-thu-tu-yeu-va-di" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/di-xa-nha-2.jpg"  alt="" title="" />
                                         </a>
                                     </div>
-                                    <div class="item-details">
-                                        <h3 class="entry-title td-module-title">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="" v-html="item.title"></a>
-                                        </h3>
-
-                                        <div class="td-module-meta-info">
-                                            <span class="td-post-date">
-                                                <time class="entry-date updated td-module-date" datetime=""></time>
-                                            </span>
-                                        </div>
-                                        <div class="td-excerpt" v-html="item.moTaNgan"></div>
-                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
                                 </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/ca-phe-sang-thu-tu-yeu-va-di" rel="bookmark" title="">Cà phê sáng thứ Tư: Yêu và đi</a>
+                                    </h3>
 
-                                <!-- <div class="page-nav td-pb-padding-side">
-                                    <a v-on:click="prevButton()"><i class="td-icon-menu-left"></i> Trang trước</a>
-                                    <a v-on:click="nextButton()">Trang kế <i class="td-icon-menu-right"></i></a>
-                                </div> -->
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 21 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Ông tên Phạm Văn Nhận, đạo diễn hàng loạt phim Việt Nam quay tại Pháp vào thập niên 50 thế kỷ trước, giờ 99 tuổi, sống một mình ở miền Nam nước Pháp.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/dai-hoc-tot-nhat-the-gioi-nhan-day-khoi-nghiep-cho-hoc-sinh-tu-lop-6" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/dai-hoc.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/dai-hoc-tot-nhat-the-gioi-nhan-day-khoi-nghiep-cho-hoc-sinh-tu-lop-6" rel="bookmark" title="">Đại học tốt nhất thế giới nhận dạy khởi nghiệp cho học sinh từ lớp 6</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 20 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Viện Công nghệ Massachusetts (MIT), ngôi trường Tốt nhất Thế giới của QS Rankings là nơi diễn ra FutureHack – Trại hè dạy công nghệ và khởi nghiệp cho các học sinh từ 12 tuổi ở khắp thế giới.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/ca-phe-luat-o-can-tho" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/cafe-luat-696x522.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/ca-phe-luat-o-can-tho" rel="bookmark" title="">Cà phê luật ở Cần Thơ</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 20 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Buổi trưa tại quán cà phê của ông Thân Hùng Đảnh (ấp Đông Hòa, xã Đông Thuận, huyện Thới Lai, TP Cần Thơ) có gần 10 người đang tranh luận nảy lửa về việc một gia đình hàng xóm thường xuyên hát karaoke phát ra âm thanh lớn, ảnh hưởng đến người dân cả ấp khiến mọi người vô cùng bức xúc.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/chung-khoan-chieu-208-gas-vnm-can-het" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/chung-khoan.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/chung-khoan-chieu-208-gas-vnm-can-het" rel="bookmark" title="">Chứng khoán chiều 20/8: GAS, VNM &quot;cân&quot; hết</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 31 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Mặc dù blue-chips giảm nhiều hơn tăng, nhưng GAS, VNM đủ lớn để "cân" hết...</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/20-nguyen-tac-vang-giup-me-day-con-hoan-hao" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/20-nguyen-tac-vang-giup-me-day-con-hoan-hao-hinh-anh.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/20-nguyen-tac-vang-giup-me-day-con-hoan-hao" rel="bookmark" title="">20 nguyên tắc vàng giúp mẹ dạy con hoàn hảo</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 31 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Bàn tay lay động thế giới chính là bàn tay đưa nôi. Điều đó nói lên rằng, sự giáo dục của mẹ ảnh hưởng đến mọi mặt trong đời sống của trẻ thơ, và hơn nữa sức ảnh hưởng đó còn vượt qua cả sự tưởng tượng của mọi người.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/15000-thien-ha-trong-anh-chup-cua-kinh-vien-vong-hubble" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/thien-ha-trong-bai-7617-1534565070.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/15000-thien-ha-trong-anh-chup-cua-kinh-vien-vong-hubble" rel="bookmark" title="">15.000 thiên hà trong ảnh chụp của kính viễn vọng Hubble</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 31 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Kính viễn vọng thiên văn Hubble đưa ra hình ảnh chi tiết về vũ trụ với nhiều thiên hà cách Trái Đất đến 11 tỷ năm ánh sáng.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/7-eleven-ra-mat-nhan-vien-robot-thu-ngan" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/dc7815a584a743478bbc05bd1527a66b.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/7-eleven-ra-mat-nhan-vien-robot-thu-ngan" rel="bookmark" title="">7-Eleven ra mắt nhân viên robot thu ngân</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 31 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">“Nhân viên thu ngân” này cho phép khách hàng thanh toán bằng tay nhờ một hệ thống sử dụng tĩnh mạch để xác minh danh tính của khách truy cập và để họ trả tiền mà không cần tiền mặt hoặc thẻ tín dụng.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/15-dieu-can-buong-bo-de-hanh-phuc-dong-day" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/15-dieu-can-buong-bo-de-hanh-phuc-dong-day-hinh-anh.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/15-dieu-can-buong-bo-de-hanh-phuc-dong-day" rel="bookmark" title="">15 điều cần buông bỏ để hạnh phúc đong đầy...</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 31 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Khi chúng ta có thể coi nhẹ hoặc buông bỏ được phần nào những tâm thái không tốt như trên, bạn sẽ phát hiện được bạn dần trở lên tốt hơn, và khi đó những người xung quanh bạn đều cảm thấy hạnh phúc.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/hoang-gia-saudi-arabia-co-the-so-huu-tai-san-1400-ty-usd" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/threesaudi-afp-1534737265344927531395-0-0-500-890-crop-15347372697551815939246.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/hoang-gia-saudi-arabia-co-the-so-huu-tai-san-1400-ty-usd" rel="bookmark" title="">Hoàng gia Saudi Arabia có thể sở hữu tài sản 1.400 tỷ USD</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 31 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Các thành viên hoàng gia Saudi Arabia nổi tiếng với lối sống xa hoa với những khoản chi lớn, máy bay cá nhân, du thuyền xa xỉ...</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/10-vung-dat-bi-an-cam-du-khach-ghe-tham-tren-the-gioi" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/10-vung-dat-bi-an-cam-du-khach-ghe-tham-tren-the-gioi.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/10-vung-dat-bi-an-cam-du-khach-ghe-tham-tren-the-gioi" rel="bookmark" title="">10 vùng đất bí ẩn cấm du khách ghé thăm trên thế giới</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 31 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Từ căn cứ bí mật đến các hòn đảo hoang sơ nơi bạn có thể bị giết nếu xâm phạm. Sau đây là 10 vùng đất cấm con người gây tò mò nhất.</div>
+                                </div>
+                            </div>
+
+                            <div class="page-nav td-pb-padding-side">
+                                <a href="/theo-dong-thoi-su/page/9"><i class="td-icon-menu-left"></i> Trang trước</a>  
                             </div>
                         </div>
                     </div>
@@ -1123,37 +1347,7 @@
                 });
             }
         });
-        (function () {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = '';
-                jQuery.get(path, function (data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path = '';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();
+    
     </script>
     <div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar">
         <header>

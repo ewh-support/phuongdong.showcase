@@ -35,7 +35,7 @@
     <link rel="dns-prefetch" href="//s.w.org" />
     <script type="text/javascript" src="/assets/wp-includes/js/axios.min.js"></script>
     <script type="text/javascript" src="/assets/wp-includes/js/vue.min.js"></script>
-    <script>
+    <!-- <script>
         window.onload = function () {
             var vue = new Vue({
                 el: '#vue-app',
@@ -84,7 +84,7 @@
                                 }
                             }
                         };
-                        let res = await axios.get('http://178.128.52.111:6400/api/BaiViets', {
+                        let res = await axios.get('', {
                             params: input
                         });
                         // console.log('res', res);
@@ -101,7 +101,7 @@
                 }
             });
         }
-    </script>
+    </script> -->
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
@@ -475,13 +475,13 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-0" class="menu-item-0">
-                                        <a href="/kinh-te">Kinh Tế</a>
+                                        <a href="/theo-dong-thoi-su/kinh-te">Kinh Tế</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/xa-hoi">Xã Hội</a>
+                                        <a href="/theo-dong-thoi-su/xa-hoi">Xã Hội</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/phap-luat">Pháp Luật</a>
+                                        <a href="/theo-dong-thoi-su/phap-luat">Pháp Luật</a>
                                     </li>
     
                                 </ul>
@@ -852,38 +852,269 @@
                 <!-- content -->
                 <div class="td-pb-row">
                     <div class="td-pb-span8 td-main-content">
-                        <div id="vue-app">
-                            <div class="td-ss-main-content">
-                                <div class="td_module_10 td_module_wrap td-animation-stack" v-for="item of items">
-                                    <div class="td-module-image">
-                                        <div class="td-module-thumb">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="">
-                                                <img class="entry-thumb td-animation-stack-type0-2 style-img-h150-dtg"
-                                                    v-bind:src="item.anhDaiDien" alt="" title="" />
-                                            </a>
-                                        </div>
-                                        <a class="td-post-category" v-bind:href="getHref(item.category)" rel="tag"
-                                            v-html="getNameCategory(item.category)">
+                        <div class="td-ss-main-content">
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/cau-chuyen-dang-sau-60-ty-usd-tien-nhan-roi-trong-dan-la-gi" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/photo1535074690500-153507469050189142937.jpg"  alt="" title="" />
                                         </a>
                                     </div>
-                                    <div class="item-details">
-                                        <h3 class="entry-title td-module-title">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="" v-html="item.title"></a>
-                                        </h3>
-
-                                        <div class="td-module-meta-info">
-                                            <span class="td-post-date">
-                                                <time class="entry-date updated td-module-date" datetime=""></time>
-                                            </span>
-                                        </div>
-                                        <div class="td-excerpt" v-html="item.moTaNgan"></div>
-                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
                                 </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/cau-chuyen-dang-sau-60-ty-usd-tien-nhan-roi-trong-dan-la-gi" rel="bookmark" title="">Câu chuyện đằng sau 60 tỷ USD tiền nhàn rỗi trong dân là gì?</a>
+                                    </h3>
 
-                                <!-- <div class="page-nav td-pb-padding-side">
-                                    <a v-on:click="prevButton()"><i class="td-icon-menu-left"></i> Trang trước</a>
-                                    <a v-on:click="nextButton()">Trang kế <i class="td-icon-menu-right"></i></a>
-                                </div> -->
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 24 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Trong nhiều năm, tổng tiết kiệm trong nước và tiết kiệm bên ngoài lớn hơn tổng đầu tư tại Việt Nam.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/tai-sao-di-khoi-cong-dong-tho-thi-duoc-doi-thoai-voi-dan-thi-khong" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/doi-thoai.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/tai-sao-di-khoi-cong-dong-tho-thi-duoc-doi-thoai-voi-dan-thi-khong" rel="bookmark" title="">Tại sao đi khởi công động thổ thì được, đối thoại với dân thì không?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 24 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Những phê phán gay gắt nhất qua kết quả giám sát việc chấp hành pháp luật về tố tụng hành chính trong giải quyết các vụ án hành chính...
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/bahrain-quoc-gia-nho-nhat-trung-dong-so-luong-trieu-phu-vao-hang-nhieu-nhat-the-gioi" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/brahain-0857.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/bahrain-quoc-gia-nho-nhat-trung-dong-so-luong-trieu-phu-vao-hang-nhieu-nhat-the-gioi" rel="bookmark" title="">Bahrain: Quốc gia nhỏ nhất Trung Đông, số lượng triệu phú vào hàng nhiều nhất thế giới</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 24 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Là quốc gia nhỏ nhất Trung Đông, diện tích chỉ bằng 1/4 Hà Nội, Bahrain có nền kinh tế thịnh vượng, với số lượng triệu phú vào hàng nhiều nhất thế giới. Người đứng đầu vương quốc Bahrain - Vua Hamad bin Isa Al Khalifa, được xếp vào danh sách những người giàu có nhất thế giới.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/suc-can-nguoi-trong-cuoc" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/giam-bien-che.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/suc-can-nguoi-trong-cuoc" rel="bookmark" title="">Sức cản ‘người trong cuộc’</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 23 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Phải chăng, cái khó nhất trong thực hiện tinh giảm bộ máy quản lý nhà nước hiện nay chính là phải đối mặt với sức cản của “người trong cuộc”, lo ngại mất “ghế”, mất quyền…?
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/cay-xanh-ma-biet-noi-nang" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/cay-xanh-CV-Gia-Dinh-3.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/cay-xanh-ma-biet-noi-nang" rel="bookmark" title="">Cây xanh mà biết nói năng…</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 23 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Những ngày này, ai vào công viên Gia Định, TP.HCM, cũng phải sốt ruột chứng kiến cảnh hàng chục cây xanh có tuổi đời cả chục năm chết khô.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/san-mua-can-ho-officetel-o-sai-gon" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/can-ho.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/san-mua-can-ho-officetel-o-sai-gon" rel="bookmark" title="">Săn mua căn hộ officetel ở Sài Gòn</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 23 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Căn hộ 35 m2 ở Sài Gòn, có thể lưu trú, làm văn phòng, được giới đầu tư lùng mua vì giá thuê tới 17 triệu đồng một tháng.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/gs-vu-ha-van-toi-thay-thu-vi-khi-nhan-loi-moi-cua-ong-pham-nhat-vuong" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/GS-Vu-Ha-Van-4367-1534950626.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/gs-vu-ha-van-toi-thay-thu-vi-khi-nhan-loi-moi-cua-ong-pham-nhat-vuong" rel="bookmark" title="">GS Vũ Hà Văn: &#x27;Tôi thấy thú vị khi nhận lời mời của ông Phạm Nhật Vượng&#x27;</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 23 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Từ việc "trùng quan điểm và mong muốn đưa khoa học phục vụ cuộc sống tốt hơn" với Chủ tịch Vingroup, GS Vũ Hà Văn nhận lời làm giám đốc Viện Nghiên cứu Dữ liệu lớn.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/co-tien-gui-ngan-hang-nao-lai-suat-cao-nhat-hien-nay" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/gui-tien.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/co-tien-gui-ngan-hang-nao-lai-suat-cao-nhat-hien-nay" rel="bookmark" title="">Có tiền gửi ngân hàng nào lãi suất cao nhất hiện nay?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 22 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Nhiều ngân hàng đang đưa ra mức lãi suất tiền gửi tiết kiệm lên trên 8%/năm.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/du-chi-la-nguoi-lam-thue-nhung-tim-cook-vua-hao-phong-cho-5-trieu-usd-lam-tu-thien" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/tim-cook.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/du-chi-la-nguoi-lam-thue-nhung-tim-cook-vua-hao-phong-cho-5-trieu-usd-lam-tu-thien" rel="bookmark" title="">Dù chỉ là người làm thuê nhưng Tim Cook vừa hào phóng cho 5 triệu USD làm từ thiện</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 22 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">CEO Apple vừa tuyên bố quyên góp gần 5 triệu USD cổ phiếu Apple cho các hoạt động từ thiện.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/gia-vang-mieng-linh-xinh-usd-tu-do-tiep-tuc-giam" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/1-15349086369531796113541-0-0-500-890-crop-15349086432431332787316.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/gia-vang-mieng-linh-xinh-usd-tu-do-tiep-tuc-giam" rel="bookmark" title="">Giá vàng miếng lình xình, USD tự do tiếp tục giảm</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 22 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Giá USD tự do sụt về quanh ngưỡng 23.500 đồng, trong khi giá USD ngân hàng tăng nhẹ...
+</div>
+                                </div>
+                            </div>
+
+                            <div class="page-nav td-pb-padding-side">
+                                <a href="/theo-dong-thoi-su/page/7"><i class="td-icon-menu-left"></i> Trang trước</a>  
+                                <a href="/theo-dong-thoi-su/page/9">Trang kế <i class="td-icon-menu-right"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -1123,37 +1354,7 @@
                 });
             }
         });
-        (function () {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = '';
-                jQuery.get(path, function (data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path = '';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();
+    
     </script>
     <div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar">
         <header>

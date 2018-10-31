@@ -35,7 +35,7 @@
     <link rel="dns-prefetch" href="//s.w.org" />
     <script type="text/javascript" src="/assets/wp-includes/js/axios.min.js"></script>
     <script type="text/javascript" src="/assets/wp-includes/js/vue.min.js"></script>
-    <script>
+    <!-- <script>
         window.onload = function () {
             var vue = new Vue({
                 el: '#vue-app',
@@ -84,7 +84,7 @@
                                 }
                             }
                         };
-                        let res = await axios.get('http://178.128.52.111:6400/api/BaiViets', {
+                        let res = await axios.get('', {
                             params: input
                         });
                         // console.log('res', res);
@@ -101,7 +101,7 @@
                 }
             });
         }
-    </script>
+    </script> -->
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
@@ -475,13 +475,13 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-0" class="menu-item-0">
-                                        <a href="/kinh-te">Kinh Tế</a>
+                                        <a href="/theo-dong-thoi-su/kinh-te">Kinh Tế</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/xa-hoi">Xã Hội</a>
+                                        <a href="/theo-dong-thoi-su/xa-hoi">Xã Hội</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/phap-luat">Pháp Luật</a>
+                                        <a href="/theo-dong-thoi-su/phap-luat">Pháp Luật</a>
                                     </li>
     
                                 </ul>
@@ -852,38 +852,267 @@
                 <!-- content -->
                 <div class="td-pb-row">
                     <div class="td-pb-span8 td-main-content">
-                        <div id="vue-app">
-                            <div class="td-ss-main-content">
-                                <div class="td_module_10 td_module_wrap td-animation-stack" v-for="item of items">
-                                    <div class="td-module-image">
-                                        <div class="td-module-thumb">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="">
-                                                <img class="entry-thumb td-animation-stack-type0-2 style-img-h150-dtg"
-                                                    v-bind:src="item.anhDaiDien" alt="" title="" />
-                                            </a>
-                                        </div>
-                                        <a class="td-post-category" v-bind:href="getHref(item.category)" rel="tag"
-                                            v-html="getNameCategory(item.category)">
+                        <div class="td-ss-main-content">
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/khi-dat-dai-bi-quan-tham-nhung-hop-phap" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/04_rlrg.jpg"  alt="" title="" />
                                         </a>
                                     </div>
-                                    <div class="item-details">
-                                        <h3 class="entry-title td-module-title">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="" v-html="item.title"></a>
-                                        </h3>
-
-                                        <div class="td-module-meta-info">
-                                            <span class="td-post-date">
-                                                <time class="entry-date updated td-module-date" datetime=""></time>
-                                            </span>
-                                        </div>
-                                        <div class="td-excerpt" v-html="item.moTaNgan"></div>
-                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
                                 </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/khi-dat-dai-bi-quan-tham-nhung-hop-phap" rel="bookmark" title="">Khi đất đai bị quan tham nhũng hợp pháp</a>
+                                    </h3>
 
-                                <!-- <div class="page-nav td-pb-padding-side">
-                                    <a v-on:click="prevButton()"><i class="td-icon-menu-left"></i> Trang trước</a>
-                                    <a v-on:click="nextButton()">Trang kế <i class="td-icon-menu-right"></i></a>
-                                </div> -->
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 08 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Mấy chục năm trước, vụ án Minh Phụng xôn xao dư luận, vì định giá một mét vuông đất chỉ bằng mấy cây kem, khiến ông Tăng Minh Phụng không thể khắc phục hậu quả trong khi giá thực tế mà ông ta mua là giá thị trường thì không được công nhận để rồi cuối cùng phải bị xử bắn.
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/rinh-rang-le-ky-niem-va-nhung-dua-tre-chui-tui-nilon" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/dung-lay-tinh-mang-nhung-dua-tre-de-thay-loi-muon-noi-1.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/rinh-rang-le-ky-niem-va-nhung-dua-tre-chui-tui-nilon" rel="bookmark" title="">Rình rang lễ kỷ niệm và những đứa trẻ chui túi nilon</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 08 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tiền ngân sách chi cho khoản này mỗi năm của cả nước là bao nhiêu? Ngoài nguồn kinh phí trên, người ta còn đi vận động cơ sở bên dưới, nơi có quan hệ này nọ…</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/quyen-biet-cua-nguoi-dan" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/quyen-biet-cua-nguoi-dan-1.JPG"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/quyen-biet-cua-nguoi-dan" rel="bookmark" title="">Quyền biết của người dân</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ bảy, 06 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tôi rất choáng váng khi đọc một khảo sát gần đây sát ở một tỉnh miền núi phía Bắc Việt Nam về bạo lực gia đình. Rất nhiều người khẳng định, họ không biết tát vào mặt người khác là một hình thức bạo lực và đánh đấm người khác là vi phạm pháp luật.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/noo-phuoc-thinh-noi-gi-khi-bi-nhac-si-nguoi-my-kien-doi-850-trieu" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/Wm1GdVpHOXRMWFIyLTAwOS0wMDktMDA5.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/noo-phuoc-thinh-noi-gi-khi-bi-nhac-si-nguoi-my-kien-doi-850-trieu" rel="bookmark" title="">Noo Phước Thịnh nói gì khi bị nhạc sĩ người Mỹ kiện đòi 850 triệu?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 05 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Sau khi bị nhạc sĩ người Mỹ Zack Hemsey khởi kiện, phía ca sĩ Noo Phước Thịnh cho biết luật sư của anh sẽ có văn bản trả lời chính thức bên nguyên đơn trong thời gian sớm nhất.
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/chui-hoc-sinh-phat-20-trieu-tat-ca-quy-het-ra-tien" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/chui-hoc-sinh-phat-20-trieu-tat-ca-quy-het-ra-tien_302254449.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/chui-hoc-sinh-phat-20-trieu-tat-ca-quy-het-ra-tien" rel="bookmark" title="">Chửi học sinh phạt 20 triệu, tất cả quy hết ra tiền</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 05 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Trong dự thảo nghị định xử phạt vi phạm hành chính trong lĩnh vực giáo dục, tất cả các lỗi chửi, đánh học sinh, ép học thêm… đều bị quy thành tiền.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/chuyen-quoc-tang-o-cac-nuoc" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/funeral-1.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/chuyen-quoc-tang-o-cac-nuoc" rel="bookmark" title="">Chuyện quốc tang ở các nước</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 04 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Quốc tang (state funeral) là lễ tang được cử hành với danh nghĩa quốc gia, dành cho những người có công lao đặc biệt với đất nước, thể hiện sự tôn kính của toàn dân đối với người đó. Có những người tuy rất xứng đáng được hưởng quy chế quốc tang, nhưng ngay từ khi còn sống đã di chúc đề nghị không tổ chức quốc tang cho mình.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/tai-sao-nhiem-ky-tham-phan-toa-an-toi-cao-hoa-ky-keo-dai" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/188_Why-Supreme-Court-justices-serve-such-long-terms.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/tai-sao-nhiem-ky-tham-phan-toa-an-toi-cao-hoa-ky-keo-dai" rel="bookmark" title="">Tại sao nhiệm kỳ Thẩm phán Tòa án Tối cao Hoa Kỳ kéo dài?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 04 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Những thẩm phán  nghỉ hưu gần đây nhất đã phục vụ gần ba thập niên.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/chung-cu-va-cau-hoi-ve-van-minh-van-hoa" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/4201534756682.7448.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/chung-cu-va-cau-hoi-ve-van-minh-van-hoa" rel="bookmark" title="">Chung cư và câu hỏi về văn minh, văn hóa</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 04 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Đã đến lúc chúng ta phải giã từ quan niệm chỉ cần ăn để no và chỉ cần ở để không mưa nắng, mà chúng ta phải tạo ra một không gian sống văn minh và văn hóa cho mình.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/qua-chuoi-xap-banh-trang-cung-can-minh-bach" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/chuoi-fohla-duoc-ong-huy-gioi-thieu-voi-lanh-dao-768x536.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/qua-chuoi-xap-banh-trang-cung-can-minh-bach" rel="bookmark" title="">Quả chuối, xấp bánh tráng cũng cần minh bạch</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 03 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Từ quả qủa chuối, quả bưởi, thùng bánh tráng truyền thống cho đến quả cà pháp, con tôm, con cá, thịt gà muốn xuất khẩu được đều phải minh bạch…
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/nhung-chuoi-hy-vong-cho-nong-nghiep-viet" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/nguyen-thanh-my-768x545 (1).jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/nhung-chuoi-hy-vong-cho-nong-nghiep-viet" rel="bookmark" title="">Những chuỗi hy vọng cho nông nghiệp Việt</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 03 10 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tôi rất thích bức ảnh mà ai đó chụp anh Nguyễn Thanh Mỹ ngồi tươi cười phía sau một dãy lọ thuỷ tinh chứa đầy những viên kẹo đủ màu rực rỡ. Lại gần, nghe anh nói, màu này cho cây xoài, màu này cho lúa, còn đây là cho cây mía…</div>
+                                </div>
+                            </div>
+
+                            <div class="page-nav td-pb-padding-side">
+ 
+                                <a href="/theo-dong-thoi-su/page/2">Trang kế <i class="td-icon-menu-right"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -1123,37 +1352,7 @@
                 });
             }
         });
-        (function () {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = '';
-                jQuery.get(path, function (data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path = '';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();
+    
     </script>
     <div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar">
         <header>

@@ -35,7 +35,7 @@
     <link rel="dns-prefetch" href="//s.w.org" />
     <script type="text/javascript" src="/assets/wp-includes/js/axios.min.js"></script>
     <script type="text/javascript" src="/assets/wp-includes/js/vue.min.js"></script>
-    <script>
+    <!-- <script>
         window.onload = function () {
             var vue = new Vue({
                 el: '#vue-app',
@@ -84,7 +84,7 @@
                                 }
                             }
                         };
-                        let res = await axios.get('http://178.128.52.111:6400/api/BaiViets', {
+                        let res = await axios.get('', {
                             params: input
                         });
                         // console.log('res', res);
@@ -101,7 +101,7 @@
                 }
             });
         }
-    </script>
+    </script> -->
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
@@ -475,13 +475,13 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-0" class="menu-item-0">
-                                        <a href="/kinh-te">Kinh Tế</a>
+                                        <a href="/theo-dong-thoi-su/kinh-te">Kinh Tế</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/xa-hoi">Xã Hội</a>
+                                        <a href="/theo-dong-thoi-su/xa-hoi">Xã Hội</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/phap-luat">Pháp Luật</a>
+                                        <a href="/theo-dong-thoi-su/phap-luat">Pháp Luật</a>
                                     </li>
     
                                 </ul>
@@ -852,38 +852,269 @@
                 <!-- content -->
                 <div class="td-pb-row">
                     <div class="td-pb-span8 td-main-content">
-                        <div id="vue-app">
-                            <div class="td-ss-main-content">
-                                <div class="td_module_10 td_module_wrap td-animation-stack" v-for="item of items">
-                                    <div class="td-module-image">
-                                        <div class="td-module-thumb">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="">
-                                                <img class="entry-thumb td-animation-stack-type0-2 style-img-h150-dtg"
-                                                    v-bind:src="item.anhDaiDien" alt="" title="" />
-                                            </a>
-                                        </div>
-                                        <a class="td-post-category" v-bind:href="getHref(item.category)" rel="tag"
-                                            v-html="getNameCategory(item.category)">
+                        <div class="td-ss-main-content">
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/trung-quoc-kien-my-len-wto-doi-boi-thuong-7-ty-usd-moi-nam" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/1-15367162188381326151007-0-0-541-963-crop-1536716222983427093014.jpg"  alt="" title="" />
                                         </a>
                                     </div>
-                                    <div class="item-details">
-                                        <h3 class="entry-title td-module-title">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="" v-html="item.title"></a>
-                                        </h3>
-
-                                        <div class="td-module-meta-info">
-                                            <span class="td-post-date">
-                                                <time class="entry-date updated td-module-date" datetime=""></time>
-                                            </span>
-                                        </div>
-                                        <div class="td-excerpt" v-html="item.moTaNgan"></div>
-                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
                                 </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/trung-quoc-kien-my-len-wto-doi-boi-thuong-7-ty-usd-moi-nam" rel="bookmark" title="">Trung Quốc kiện Mỹ lên WTO, đòi bồi thường 7 tỷ USD mỗi năm</a>
+                                    </h3>
 
-                                <!-- <div class="page-nav td-pb-padding-side">
-                                    <a v-on:click="prevButton()"><i class="td-icon-menu-left"></i> Trang trước</a>
-                                    <a v-on:click="nextButton()">Trang kế <i class="td-icon-menu-right"></i></a>
-                                </div> -->
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 13 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Trung Quốc nói với Tổ chức Thương mại Thế giới (WTO) rằng nước này muốn áp các biện pháp trừng phạt trị giá 7 tỷ USD mỗi năm lên Mỹ để trả đũa việc Washington không tuân thủ với phán quyết của WTO trong một vụ tranh chấp liên quan đến thuế chống bán phá giá.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/5-dieu-co-the-it-nguoi-biet-ve-chien-tranh-thuong-mai-my-trung" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/1-15367415693291580237789-0-0-539-960-crop-1536741573920653922762.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/5-dieu-co-the-it-nguoi-biet-ve-chien-tranh-thuong-mai-my-trung" rel="bookmark" title="">5 điều có thể ít người biết về chiến tranh thương mại Mỹ-Trung</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 13 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Xung đột thương mại giữa Mỹ và Trung Quốc đã leo thang suốt mấy tháng nay, khi hai bên liên tục "ăn miếng trả miếng" bằng cách áp thuế và đe dọa áp thuế lên hàng hóa của nhau. Tình trạng này khiến giới đầu tư toàn cầu lo ngại về khả năng đi đến một cuộc chiến thương mại tổng lực giữa hai nền kinh tế lớn nhất thế giới.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/thu-tuong-hoi-facebook-google-ban-khoan-dieu-gi-khi-dau-tu-o-viet-nam" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/nqh4321-copy-1536724493-width1500height989-1536732889851668902278.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/thu-tuong-hoi-facebook-google-ban-khoan-dieu-gi-khi-dau-tu-o-viet-nam" rel="bookmark" title="">Thủ tướng hỏi Facebook, Google băn khoăn điều gì khi đầu tư ở Việt Nam?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 12 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Trong buổi gặp mặt với hàng loạt tập đoàn toàn cầu, gồm cả Google, Facebook, Thủ tướng chia sẻ mong muốn lắng nghe “điều gì làm quý vị tâm đắc nhất và có điều gì mà quý vị cho là băn khoăn nhất khi đầu tư làm ăn ở Việt Nam?".</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/chu-tich-quoc-hoi-chuong-trinh-giao-duc-gi-ma-thuc-nghiem-toi-40-nam" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/nguyen-thi-kim-ngan-1-15367220349191932128020.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/chu-tich-quoc-hoi-chuong-trinh-giao-duc-gi-ma-thuc-nghiem-toi-40-nam" rel="bookmark" title="">Chủ tịch Quốc hội: Chương trình giáo dục gì mà thực nghiệm tới… 40 năm?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 12 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">“Mổ xẻ” chuyện thời sự về sách Công nghệ giáo dục của GS.Hồ Ngọc Đại đang "gây bão" dư luận những ngày qua, các ủy viên Ủy ban Thường vụ Quốc hội cũng tỏ ra bất ngờ về phương pháp dạy tiếng Việt đã được thực nghiệm giảng dạy suốt… 40 năm qua.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/vinfast-qua-mot-dem-thanh-tay-choi-lon-cua-nganh-oto" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/105441679-1536581895063vinfastsuv-front3-4.1910x1000.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/vinfast-qua-mot-dem-thanh-tay-choi-lon-cua-nganh-oto" rel="bookmark" title="">VinFast – ‘qua một đêm’ thành tay chơi lớn của ngành ôtô?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 11 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Một thời là vùng nước nguy hiểm nhất thế giới với bom mìn dày đặc trong giai đoạn cuối chiến tranh, nhưng ngày nay, cảng Hải Phòng đã trở thành trung tâm của sự bùng nổ kinh tế của Việt Nam.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/khi-ong-chu-xe-buyt-che-tien" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/imgpsh_fullsize-10-768x506.jpeg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/khi-ong-chu-xe-buyt-che-tien" rel="bookmark" title="">Khi ‘ông chủ’ xe buýt… chê tiền</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 10 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Ông Nguyễn Đức Hữu - Phó Vụ trưởng phụ trách Vụ Giáo dục Tiểu học, Bộ GD&ĐT cho biết, năm học 2018 – 2019, tiếp tục triển khai tài liệu tiếng Việt 1– Công nghệ giáo dục ở những địa phương đang triển khai theo nguyên tắc tự nguyện nhưng không mở rộng để giữ ổn định cho đến khi thực hiện Chương trình giáo dục phổ thông mới.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/hau-het-cac-phong-kham-chuyen-khoa-tham-my-khong-dat-chat-luong" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/tham-my-vien.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/hau-het-cac-phong-kham-chuyen-khoa-tham-my-khong-dat-chat-luong" rel="bookmark" title="">Hầu hết các phòng khám chuyên khoa thẩm mỹ không đạt chất lượng</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 10 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt"></div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/nam-hoc-2018-2019-tiep-tuc-day-tieng-viet-cong-nghe-giao-duc" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/nguyen-duc-huu-1536527922245806561799.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/nam-hoc-2018-2019-tiep-tuc-day-tieng-viet-cong-nghe-giao-duc" rel="bookmark" title="">Năm học 2018 - 2019, tiếp tục dạy tiếng Việt - công nghệ giáo dục</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 10 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Ông Nguyễn Đức Hữu - Phó Vụ trưởng phụ trách Vụ Giáo dục Tiểu học, Bộ GD&ĐT cho biết, năm học 2018 – 2019, tiếp tục triển khai tài liệu tiếng Việt 1– Công nghệ giáo dục ở những địa phương đang triển khai theo nguyên tắc tự nguyện nhưng không mở rộng để giữ ổn định cho đến khi thực hiện Chương trình giáo dục phổ thông mới.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/viet-nam-da-ky-them-10-hiep-dinh-vay-von-tri-gia-113-ty-usd" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/vay-von.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/viet-nam-da-ky-them-10-hiep-dinh-vay-von-tri-gia-113-ty-usd" rel="bookmark" title="">Việt Nam đã ký thêm 10 hiệp định vay vốn, trị giá 1,13 tỷ USD</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 10 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Bộ Tài chính cho biết, lũy kế 8 tháng Việt Nam đã ký kết được 10 hiệp định vay với tổng trị giá 1,13 tỷ USD.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/chinh-phu-de-nghi-chon-phuong-an-giai-quyet-tai-san-bat-minh-tai-toa" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/le-thi-nga-2-1536542127503671136465-10-88-386-758-crop-15365421668581261686524.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/chinh-phu-de-nghi-chon-phuong-an-giai-quyet-tai-san-bat-minh-tai-toa" rel="bookmark" title="">Chính phủ đề nghị chọn phương án giải quyết tài sản bất minh tại toà</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 10 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Dù vẫn xây dựng hai phương án song cả cơ quan thẩm tra và cơ quan trình dự án luật đều đề nghị chọn phương án giải quyết tài sản bất minh tại toà án.
+
+</div>
+                                </div>
+                            </div>
+
+                            <div class="page-nav td-pb-padding-side">
+                                <a href="/theo-dong-thoi-su/page/3"><i class="td-icon-menu-left"></i> Trang trước</a>  
+                                <a href="/theo-dong-thoi-su/page/5">Trang kế <i class="td-icon-menu-right"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -1123,37 +1354,7 @@
                 });
             }
         });
-        (function () {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = '';
-                jQuery.get(path, function (data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path = '';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();
+    
     </script>
     <div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar">
         <header>

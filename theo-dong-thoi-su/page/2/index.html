@@ -35,7 +35,7 @@
     <link rel="dns-prefetch" href="//s.w.org" />
     <script type="text/javascript" src="/assets/wp-includes/js/axios.min.js"></script>
     <script type="text/javascript" src="/assets/wp-includes/js/vue.min.js"></script>
-    <script>
+    <!-- <script>
         window.onload = function () {
             var vue = new Vue({
                 el: '#vue-app',
@@ -84,7 +84,7 @@
                                 }
                             }
                         };
-                        let res = await axios.get('http://178.128.52.111:6400/api/BaiViets', {
+                        let res = await axios.get('', {
                             params: input
                         });
                         // console.log('res', res);
@@ -101,7 +101,7 @@
                 }
             });
         }
-    </script>
+    </script> -->
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
@@ -475,13 +475,13 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-0" class="menu-item-0">
-                                        <a href="/kinh-te">Kinh Tế</a>
+                                        <a href="/theo-dong-thoi-su/kinh-te">Kinh Tế</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/xa-hoi">Xã Hội</a>
+                                        <a href="/theo-dong-thoi-su/xa-hoi">Xã Hội</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/phap-luat">Pháp Luật</a>
+                                        <a href="/theo-dong-thoi-su/phap-luat">Pháp Luật</a>
                                     </li>
     
                                 </ul>
@@ -852,38 +852,271 @@
                 <!-- content -->
                 <div class="td-pb-row">
                     <div class="td-pb-span8 td-main-content">
-                        <div id="vue-app">
-                            <div class="td-ss-main-content">
-                                <div class="td_module_10 td_module_wrap td-animation-stack" v-for="item of items">
-                                    <div class="td-module-image">
-                                        <div class="td-module-thumb">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="">
-                                                <img class="entry-thumb td-animation-stack-type0-2 style-img-h150-dtg"
-                                                    v-bind:src="item.anhDaiDien" alt="" title="" />
-                                            </a>
-                                        </div>
-                                        <a class="td-post-category" v-bind:href="getHref(item.category)" rel="tag"
-                                            v-html="getNameCategory(item.category)">
+                        <div class="td-ss-main-content">
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/vng-cong-bo-danh-tinh-co-dong-ngoai" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/lehongminh-1502329668370-crop-1502329677329-1502437048874-0-22-319-536-crop-1502437063427.jpg"  alt="" title="" />
                                         </a>
                                     </div>
-                                    <div class="item-details">
-                                        <h3 class="entry-title td-module-title">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="" v-html="item.title"></a>
-                                        </h3>
-
-                                        <div class="td-module-meta-info">
-                                            <span class="td-post-date">
-                                                <time class="entry-date updated td-module-date" datetime=""></time>
-                                            </span>
-                                        </div>
-                                        <div class="td-excerpt" v-html="item.moTaNgan"></div>
-                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
                                 </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/vng-cong-bo-danh-tinh-co-dong-ngoai" rel="bookmark" title="">VNG công bố danh tính cổ đông ngoại</a>
+                                    </h3>
 
-                                <!-- <div class="page-nav td-pb-padding-side">
-                                    <a v-on:click="prevButton()"><i class="td-icon-menu-left"></i> Trang trước</a>
-                                    <a v-on:click="nextButton()">Trang kế <i class="td-icon-menu-right"></i></a>
-                                </div> -->
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 28 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Nhà đầu tư ngoại chiếm hơn 43,4% vốn điều lệ của VNG, trong đó một đến từ Trung Quốc và 2 cổ đông lớn đặt trụ sở ở “thiên đường” thuế British Virgin Islands.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/ha-noi-xay-tru-so-dong-phuc-lang-phi-khong" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/HA-NOI-MUON-XAY-TRU-SO.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/ha-noi-xay-tru-so-dong-phuc-lang-phi-khong" rel="bookmark" title="">Hà Nội xây trụ sở &#x27;đồng phục&#x27;, lãng phí không?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 28 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Chuyện Sở Xây dựng Hà Nội đang lấy ý kiến để thực hiện việc sửa chữa, xây mới “đồng phục” cho 483 trụ sở xã phường khiến mạng xã hội xôn xao.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/bam-coi-khi-tac-duong-mot-loi-tu-duy-ky-la" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/coi-to.gif"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/bam-coi-khi-tac-duong-mot-loi-tu-duy-ky-la" rel="bookmark" title="">Bấm còi khi tắc đường – một lối tư duy kỳ lạ</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 28 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tham gia giao thông ở Việt Nam là một trải nghiệm rất khác biệt và đáng nhớ đối với những du khách nước ngoài. Nhưng ngay cả với một số người Việt, đôi khi họ cũng phải ngạc nhiên tự hỏi: Giữa đám đông này, tôi là ai và đây là đâu?</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/bi-kich-nguoi-tot" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/mlong-tot-15376582414221592073298.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/bi-kich-nguoi-tot" rel="bookmark" title="">Bi kịch người tốt</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 27 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Chiều 17.9 trở thành ký ức đáng quên với cả trăm con người vừa thoát khỏi vụ cháy kinh hoàng tại khu vực gần cổng Bệnh viện Nhi Trung ương.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/tam-nhin-toyota-ve-xe-tu-lai-phan-2-toi-can-guardian-can-thiep" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/1200x-1-768x512.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/tam-nhin-toyota-ve-xe-tu-lai-phan-2-toi-can-guardian-can-thiep" rel="bookmark" title="">Tầm nhìn Toyota về xe tự lái - Phần 2: ‘Tôi cần Guardian can thiệp’</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 27 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Leonard ước mơ Toyota nhận được thư từ chủ sở hữu xe nói rằng, “Đứa con trẻ của tôi đang tập và làm quen với việc lái xe; e rằng nó sẽ làm điều gì đó ngu ngốc. Tôi cần Guardian can thiệp.”
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/5-dong-tien-dang-mat-gia-nhieu-nhat" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/lira.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/5-dong-tien-dang-mat-gia-nhieu-nhat" rel="bookmark" title="">5 đồng tiền đang mất giá nhiều nhất</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 27 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tốc độ lao dốc chóng mặt của đồng Peso Argentina và đồng Lira Thổ Nhĩ Kỳ đã trở thành tâm điểm chú ý của thị trường toàn cầu thời gian gần đây.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/tam-nhin-toyota-ve-xe-tu-lai-phan-1-chiec-lexus-ls-600hl-bac" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/800x-1-683x1024 (2).jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/tam-nhin-toyota-ve-xe-tu-lai-phan-1-chiec-lexus-ls-600hl-bac" rel="bookmark" title="">Tầm nhìn Toyota về xe tự lái - Phần 1: Chiếc Lexus LS 600hL bạc</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ năm, 27 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Toyota đã đầu tư 4 tỷ đôla vào viện nghiên cứu AI và robot để tạo ra những phương tiện giao thông an toàn hơn. Tầm nhìn về tự lái của Toyota không thực sự loại bỏ tài xế. Đúng hơn, đó là về việc sử dụng các công nghệ tự động và kỹ thuật liên quan để làm cho chiếc xe an toàn hơn và thân thiện với người dùng hơn,...</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/chien-thang-cua-dat-nuoc-ngheo-nepal-dan-cop-da-tang-gan-gap-doi" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/dan-cop-royal-bengal.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/chien-thang-cua-dat-nuoc-ngheo-nepal-dan-cop-da-tang-gan-gap-doi" rel="bookmark" title="">Chiến thắng của đất nước nghèo Nepal: Đàn cọp đã tăng gần gấp đôi</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 25 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Đàn cọp hoang dã của Nepal đã tăng gần gấp đôi trong vòng chín năm qua, các quan chức cho biết hôm 24/9.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/thuc-hu-chuyen-trung-quoc-vuot-my" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/china_america.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/thuc-hu-chuyen-trung-quoc-vuot-my" rel="bookmark" title="">Thực hư chuyện ‘Trung Quốc vượt Mỹ’</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 24 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Năm 2010 tổng sản phẩm quốc dân của Trung Quốc vượt Nhật, trở thành nền kinh tế lớn thứ hai toàn cầu chỉ sau Mỹ, và tăng trưởng tiếp với tốc độ nhanh hơn Mỹ. Dư luận bắt đầu bàn về thời điểm kinh tế Trung Quốc sẽ soán ngôi số một. Truyền thông Mỹ cũng quan tâm tới vấn đề Trung Quốc vượt Mỹ, chủ yếu để giới thiệu sự tiến bộ của Trung Quốc mà không tranh cãi đúng sai.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/23091875-tuong-cuop-billy-the-kid-bi-bat-lan-dau-tien" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/23.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/23091875-tuong-cuop-billy-the-kid-bi-bat-lan-dau-tien" rel="bookmark" title="">23/09/1875: Tướng cướp Billy the Kid bị bắt lần đầu tiên</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 24 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Vào ngày này năm 1875, Billy the Kid (Nhóc Billy) đã bị bắt lần đầu tiên sau khi ăn cắp một giỏ đồ giặt. Sau đó hắn trốn khỏi nhà tù và lang thang khắp miền Tây nước Mỹ, và dần dần trở thành một kẻ sống ngoài vòng pháp luật, một tên sát nhân bị cáo buộc gây ra 21 vụ giết người.
+
+</div>
+                                </div>
+                            </div>
+
+                            <div class="page-nav td-pb-padding-side">
+                                <a href="/theo-dong-thoi-su"><i class="td-icon-menu-left"></i> Trang trước</a>  
+                                <a href="/theo-dong-thoi-su/page/3">Trang kế <i class="td-icon-menu-right"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -1123,37 +1356,7 @@
                 });
             }
         });
-        (function () {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = '';
-                jQuery.get(path, function (data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path = '';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();
+    
     </script>
     <div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar">
         <header>

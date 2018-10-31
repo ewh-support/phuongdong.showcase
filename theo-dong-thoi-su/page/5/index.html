@@ -35,7 +35,7 @@
     <link rel="dns-prefetch" href="//s.w.org" />
     <script type="text/javascript" src="/assets/wp-includes/js/axios.min.js"></script>
     <script type="text/javascript" src="/assets/wp-includes/js/vue.min.js"></script>
-    <script>
+    <!-- <script>
         window.onload = function () {
             var vue = new Vue({
                 el: '#vue-app',
@@ -84,7 +84,7 @@
                                 }
                             }
                         };
-                        let res = await axios.get('http://178.128.52.111:6400/api/BaiViets', {
+                        let res = await axios.get('', {
                             params: input
                         });
                         // console.log('res', res);
@@ -101,7 +101,7 @@
                 }
             });
         }
-    </script>
+    </script> -->
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
@@ -475,13 +475,13 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-0" class="menu-item-0">
-                                        <a href="/kinh-te">Kinh Tế</a>
+                                        <a href="/theo-dong-thoi-su/kinh-te">Kinh Tế</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/xa-hoi">Xã Hội</a>
+                                        <a href="/theo-dong-thoi-su/xa-hoi">Xã Hội</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/phap-luat">Pháp Luật</a>
+                                        <a href="/theo-dong-thoi-su/phap-luat">Pháp Luật</a>
                                     </li>
     
                                 </ul>
@@ -852,38 +852,273 @@
                 <!-- content -->
                 <div class="td-pb-row">
                     <div class="td-pb-span8 td-main-content">
-                        <div id="vue-app">
-                            <div class="td-ss-main-content">
-                                <div class="td_module_10 td_module_wrap td-animation-stack" v-for="item of items">
-                                    <div class="td-module-image">
-                                        <div class="td-module-thumb">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="">
-                                                <img class="entry-thumb td-animation-stack-type0-2 style-img-h150-dtg"
-                                                    v-bind:src="item.anhDaiDien" alt="" title="" />
-                                            </a>
-                                        </div>
-                                        <a class="td-post-category" v-bind:href="getHref(item.category)" rel="tag"
-                                            v-html="getNameCategory(item.category)">
+                        <div class="td-ss-main-content">
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/nha-mang-de-xuat-duoc-tham-gia-vao-linh-vuc-thanh-toan-dien-tu" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/thanh-toan-truc-tuyen.jpg"  alt="" title="" />
                                         </a>
                                     </div>
-                                    <div class="item-details">
-                                        <h3 class="entry-title td-module-title">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="" v-html="item.title"></a>
-                                        </h3>
-
-                                        <div class="td-module-meta-info">
-                                            <span class="td-post-date">
-                                                <time class="entry-date updated td-module-date" datetime=""></time>
-                                            </span>
-                                        </div>
-                                        <div class="td-excerpt" v-html="item.moTaNgan"></div>
-                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
                                 </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/nha-mang-de-xuat-duoc-tham-gia-vao-linh-vuc-thanh-toan-dien-tu" rel="bookmark" title="">Nhà mạng đề xuất được tham gia vào lĩnh vực thanh toán điện tử</a>
+                                    </h3>
 
-                                <!-- <div class="page-nav td-pb-padding-side">
-                                    <a v-on:click="prevButton()"><i class="td-icon-menu-left"></i> Trang trước</a>
-                                    <a v-on:click="nextButton()">Trang kế <i class="td-icon-menu-right"></i></a>
-                                </div> -->
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 10 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tại buổi làm việc giữa Thủ tướng Nguyễn Xuân Phúc với Bộ Thông tin và Truyền thông sáng 8/9/2018, lãnh đạo các doanh nghiệp viễn thông đã kiến nghị Chính phủ và Bộ Thông tin và Truyền thông cho phép các doanh nghiệp viễn thông tham gia vào các khâu trong thanh toán điện tử.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/bo-mat-kinh-te-my-thay-doi-the-nao-duoi-thoi-tong-thong-trump" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/kinh-te-my.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/bo-mat-kinh-te-my-thay-doi-the-nao-duoi-thoi-tong-thong-trump" rel="bookmark" title="">Bộ mặt kinh tế Mỹ thay đổi thế nào dưới thời Tổng thống Trump?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ hai, 10 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tính đến hiện tại, Tổng thống Mỹ Donald Trump đã cầm quyền hơn 19 tháng. Trong khoảng thời gian đó, chính quyền của ông luôn bị bủa vây bởi tranh cãi và bê bối, nhưng kinh tế Mỹ cũng đạt được sự tăng trưởng bùng nổ không thể phủ nhận.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/08091664-new-amsterdam-tro-thanh-new-york" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/08.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/08091664-new-amsterdam-tro-thanh-new-york" rel="bookmark" title="">08/09/1664: New Amsterdam trở thành New York</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ bảy, 08 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Vào ngày này năm 1664, Thống đốc Hà Lan Peter Stuyvesant đã đầu hàng tại New Amsterdam, thủ đô của New Netherland, trước hạm đội hải quân Anh dưới quyền Đại tá Richard Nicolls.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/02091969-atm-chinh-thuc-duoc-dua-vao-su-dung" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/02.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/02091969-atm-chinh-thuc-duoc-dua-vao-su-dung" rel="bookmark" title="">02/09/1969: ATM chính thức được đưa vào sử dụng </a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ bảy, 08 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Vào ngày này năm 1969, máy rút tiền tự động (Automatic Teller Machine, ATM) đầu tiên của Mỹ đã được ra mắt công chúng khi xuất tiền mặt cho khách hàng tại Ngân hàng Chemical ở Rockville Centre, New York. </div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/my-mehico-vi-sao-ong-donald-trump-quyet-xoa-co-danh-lai" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/0000_orxv.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/my-mehico-vi-sao-ong-donald-trump-quyet-xoa-co-danh-lai" rel="bookmark" title="">Mỹ - Mêhicô: Vì sao ông Donald Trump quyết “xóa cờ đánh lại”?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ bảy, 08 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Mỹ và Mêhicô hôm 27/8/2018 đã đạt được một thỏa thuận thương mại, sau nhiều tháng thương lượng gay go. Từ khi bước vào Nhà Trắng, ông Donald Trump vẫn đả kích hiệp định tự do mậu dịch ALENA giữa Hoa Kỳ với Mêhicô và Canada, mà ông cho là bất bình đẳng đối với Mỹ. Thỏa thuận đạt được với Mêhicô là nhằm thay thế cho ALENA.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/thi-truong-thi-truong-va-thi-truong-hon" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/nguyen-dinh-cung-thumb_oibk.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/thi-truong-thi-truong-va-thi-truong-hon" rel="bookmark" title="">‘Thị trường, thị trường và thị trường hơn’</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 07 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">“Chỉ có thị trường, thị trường và thị trường hơn mới tạo ra động lực mới cho tăng trưởng, phát triển. Còn nếu cứ kìm hãm thị trường như hiện nay thì sẽ không có dư địa cho tăng trưởng”, Viện trưởng CIEM nhấn mạnh.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/thu-truong-le-quy-vuong-noi-ve-vu-danh-bac-ngan-ty-lien-quan-den-tuong-cong-an" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/thu-truong.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/thu-truong-le-quy-vuong-noi-ve-vu-danh-bac-ngan-ty-lien-quan-den-tuong-cong-an" rel="bookmark" title="">Thứ trưởng Lê Quý Vương nói về vụ đánh bạc ngàn tỷ liên quan đến tướng công an</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 07 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Hồi âm những ý kiến khá gay gắt về tội phạm ngay chính trong cơ quan chống tội phạm mà điển hình là vụ đánh bạc liên quan đến cán bộ công an, Thứ trưởng Bộ Công an Lê Quý Vương nhấn mạnh đây là vụ việc "hết sức đau xót".
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/trung-quoc-binh-thuong-hoa-thi-truong-duoc-pham" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/china_healthcare_medicine_twt01.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/trung-quoc-binh-thuong-hoa-thi-truong-duoc-pham" rel="bookmark" title="">Trung Quốc bình thường hóa thị trường dược phẩm</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ sáu, 07 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Những thay đổi quan trọng được cho là không chỉ giúp cho các nhà sản xuất dược đa quốc gia, mà trong thời gian tới còn có thể thúc đẩy ngành công nghiệp trong nước.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/kinh-te-australia-27-nam-lien-khong-suy-thoai" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/uc.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/kinh-te-australia-27-nam-lien-khong-suy-thoai" rel="bookmark" title="">Kinh tế Australia 27 năm liền không suy thoái</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 05 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Nền kinh tế Australia tăng trưởng mạnh trong quý 2 vừa qua, đánh dấu chuỗi 27 năm liên tục không hề suy thoái...
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/chong-tham-nhung-hai-vo-si-ngang-ngua-thi-danh-nhau-den-cung" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/minh-tri-1536067390459544963650-0-0-539-960-crop-1536067397117744856945.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/chong-tham-nhung-hai-vo-si-ngang-ngua-thi-danh-nhau-den-cung" rel="bookmark" title="">Chống tham nhũng: &quot;Hai võ sĩ ngang ngửa thì đánh nhau đến cùng&quot;</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 05 09 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Viện trưởng Viện Kiểm sát nhân dân Tối cao nói về nguyên nhân dẫn tới tỷ lệ trả hồ sơ loại tội phạm kinh tế, chức vụ tham nhũng cao...
+</div>
+                                </div>
+                            </div>
+
+                            <div class="page-nav td-pb-padding-side">
+                                <a href="/theo-dong-thoi-su/page/4"><i class="td-icon-menu-left"></i> Trang trước</a>  
+                                <a href="/theo-dong-thoi-su/page/6">Trang kế <i class="td-icon-menu-right"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -1123,37 +1358,7 @@
                 });
             }
         });
-        (function () {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = '';
-                jQuery.get(path, function (data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path = '';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();
+    
     </script>
     <div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar">
         <header>

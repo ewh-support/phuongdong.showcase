@@ -35,7 +35,7 @@
     <link rel="dns-prefetch" href="//s.w.org" />
     <script type="text/javascript" src="/assets/wp-includes/js/axios.min.js"></script>
     <script type="text/javascript" src="/assets/wp-includes/js/vue.min.js"></script>
-    <script>
+    <!-- <script>
         window.onload = function () {
             var vue = new Vue({
                 el: '#vue-app',
@@ -84,7 +84,7 @@
                                 }
                             }
                         };
-                        let res = await axios.get('http://178.128.52.111:6400/api/BaiViets', {
+                        let res = await axios.get('', {
                             params: input
                         });
                         // console.log('res', res);
@@ -101,7 +101,7 @@
                 }
             });
         }
-    </script>
+    </script> -->
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
@@ -475,13 +475,13 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-0" class="menu-item-0">
-                                        <a href="/kinh-te">Kinh Tế</a>
+                                        <a href="/theo-dong-thoi-su/kinh-te">Kinh Tế</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/xa-hoi">Xã Hội</a>
+                                        <a href="/theo-dong-thoi-su/xa-hoi">Xã Hội</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/phap-luat">Pháp Luật</a>
+                                        <a href="/theo-dong-thoi-su/phap-luat">Pháp Luật</a>
                                     </li>
     
                                 </ul>
@@ -852,38 +852,274 @@
                 <!-- content -->
                 <div class="td-pb-row">
                     <div class="td-pb-span8 td-main-content">
-                        <div id="vue-app">
-                            <div class="td-ss-main-content">
-                                <div class="td_module_10 td_module_wrap td-animation-stack" v-for="item of items">
-                                    <div class="td-module-image">
-                                        <div class="td-module-thumb">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="">
-                                                <img class="entry-thumb td-animation-stack-type0-2 style-img-h150-dtg"
-                                                    v-bind:src="item.anhDaiDien" alt="" title="" />
-                                            </a>
-                                        </div>
-                                        <a class="td-post-category" v-bind:href="getHref(item.category)" rel="tag"
-                                            v-html="getNameCategory(item.category)">
+                        <div class="td-ss-main-content">
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/chau-noi-vua-meo-ke-ve-cuoc-song-cua-nguoi-ong-duoc-bac-ho-ket-nghia-anh-em" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/ong-bao-1-crop-1534865339950226300279.jpg"  alt="" title="" />
                                         </a>
                                     </div>
-                                    <div class="item-details">
-                                        <h3 class="entry-title td-module-title">
-                                            <a v-bind:href="'/' + item.slug" rel="bookmark" title="" v-html="item.title"></a>
-                                        </h3>
-
-                                        <div class="td-module-meta-info">
-                                            <span class="td-post-date">
-                                                <time class="entry-date updated td-module-date" datetime=""></time>
-                                            </span>
-                                        </div>
-                                        <div class="td-excerpt" v-html="item.moTaNgan"></div>
-                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
                                 </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/chau-noi-vua-meo-ke-ve-cuoc-song-cua-nguoi-ong-duoc-bac-ho-ket-nghia-anh-em" rel="bookmark" title="">Cháu nội Vua Mèo kể về cuộc sống của người ông được Bác Hồ kết nghĩa anh em</a>
+                                    </h3>
 
-                                <!-- <div class="page-nav td-pb-padding-side">
-                                    <a v-on:click="prevButton()"><i class="td-icon-menu-left"></i> Trang trước</a>
-                                    <a v-on:click="nextButton()">Trang kế <i class="td-icon-menu-right"></i></a>
-                                </div> -->
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 22 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">"Được mệnh danh là Vua của một vùng, trong nhà chứa rất nhiều vàng bạc, châu báu nhưng ông nội tôi - Vương Chí Sình lại sống một cuộc sống rất giản dị. Ông luôn dạy con cháu phải biết chịu khó lao động mới có cái ăn và không phải chịu cảnh đói khổ" - ông Vương Duy Bảo kể về người ông nội nổi tiếng một thời.</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/putin-kiem-tra-dot-xuat-kha-nang-chien-dau-cua-binh-linh-nga" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/aW1hZ2VzXzI&#x3D;.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/putin-kiem-tra-dot-xuat-kha-nang-chien-dau-cua-binh-linh-nga" rel="bookmark" title="">Putin ‘kiểm tra đột xuất’ khả năng chiến đấu của binh lính Nga</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 22 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Bộ trưởng Quốc phòng Nga cho biết Tổng thống Vladimir Putin ra lệnh mở hai cuộc tập trận lớn nhất kể từ năm 1981 đến nay, và ông Putin có thể đến “kiểm tra đột xuất” khả năng chiến đấu của binh lính Nga.
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/venezuela-doi-tien-voi-hy-vong-phep-la-kinh-te" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/dmVuZXp1ZWxhLWRvaS10aWVuLTI&#x3D;.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/venezuela-doi-tien-voi-hy-vong-phep-la-kinh-te" rel="bookmark" title="">Venezuela đổi tiền với hy vọng ‘phép lạ kinh tế’</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 22 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Từ ngày 20.8, chính phủ Tổng thống Venezuela thực hiện cuộc đổi tiền, với đồng Bolivar mới bị xóa đi 5 số 0, trong nỗ lực chung cố gắng chống siêu lạm phát và phục hồi nền kinh tế đang suy yếu mạnh.
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/quoc-te-hay-the-gioi" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/cXVvYy10ZQ&#x3D;&#x3D;.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/quoc-te-hay-the-gioi" rel="bookmark" title="">Quốc tế hay thế giới?</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ tư, 22 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Nếu ta dùng một cách chung chung, thì hai từ này có thể hoán vị: tin thế giới/tin quốc tế, trang thế giới/trang quốc tế, thể thao thế giới/thể thao quốc tế... Nhưng trong nhiều kết hợp thì việc thay đổi như vậy lại không được.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/nhan-dan-te-tang-gia-lien-tiep-nho-tin-dam-phan-thuong-mai-trung-my" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/nhan-dan-te.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/nhan-dan-te-tang-gia-lien-tiep-nho-tin-dam-phan-thuong-mai-trung-my" rel="bookmark" title="">Nhân dân tệ tăng giá liên tiếp nhờ tin đàm phán thương mại Trung-Mỹ</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 21 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Đồng Nhân dân tệ của Trung Quốc ngày 20/8 tăng phiên thứ ba liên tục, đạt mức cao nhất trong hơn 1 tuần...
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/luong-co-ban-tang-60-lan-doanh-nghiep-venezuela-choang-vang" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/Venezuela.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/luong-co-ban-tang-60-lan-doanh-nghiep-venezuela-choang-vang" rel="bookmark" title="">Lương cơ bản tăng 60 lần, doanh nghiệp Venezuela &quot;choáng váng&quot;</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 21 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Lương cơ bản tăng từ 3 triệu Bolivar lên 180 triệu Bolivar mỗi tháng khiến các doanh nghiệp ở Venezuela “choáng váng”...
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/chung-khoan-my-ha-nhiet-sau-phat-bieu-cua-ong-trump-ve-fed" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/chung-khoan-my.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/kinh-te" rel="tag"> 
+                                        Kinh tế  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/chung-khoan-my-ha-nhiet-sau-phat-bieu-cua-ong-trump-ve-fed" rel="bookmark" title="">Chứng khoán Mỹ “hạ nhiệt” sau phát biểu của ông Trump về FED</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 21 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Tuy lạc quan về đàm phán thương mại, các nhà đầu tư chứng khoán Mỹ bớt vui sau khi ông Trump chỉ trích FED...
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/ong-truong-dinh-tuyen-lam-to-truong-tu-van-kinh-te-doi-song-xa-hoi-tinh-nghe-an" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/truong-dinh-tuyen.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/xa-hoi" rel="tag"> 
+                                        Xã hội  
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/ong-truong-dinh-tuyen-lam-to-truong-tu-van-kinh-te-doi-song-xa-hoi-tinh-nghe-an" rel="bookmark" title="">Ông Trương Đình Tuyển làm tổ trưởng tư vấn kinh tế xã hội tỉnh Nghệ An</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 21 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">UBND tỉnh Nghệ An vừa công bố quyết định thành lập Tổ tư vấn kinh tế xã hội tỉnh. Ông Trương Đình Tuyển, nguyên Bộ trưởng Thương mại, nguyên Bí thư Tỉnh ủy tỉnh Nghệ An, làm tổ trưởng.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/ba-me-no-thoi-nhau" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/mo-coi.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/ba-me-no-thoi-nhau" rel="bookmark" title="">Ba mẹ nó thôi nhau…</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 21 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Ông cụ lóng ngóng ký tên mình vào phiếu cam kết mổ. Gương mặt đứa trẻ vẫn không biểu lộ một chút cảm xúc nào. Thế rồi hai ông cháu lầm lũi đi về phòng bệnh đợi sáng hôm sau, đứa cháu sẽ lên bàn mổ.
+
+</div>
+                                </div>
+                            </div>
+                            <div class="td_module_10 td_module_wrap td-animation-stack">
+                                <div class="td-module-image">
+
+                                    <div class="td-module-thumb">
+                                        <a href="/nguoi-thanh-nien-ngoi-khoc" rel="bookmark" title="">
+                                            <img width="218" height="150" class="entry-thumb" src="http://178.128.52.111:6400/api/BaiVietContainers/anh-dai-dien/download/khoc.jpg"  alt="" title="" />
+                                        </a>
+                                    </div>
+                                    <a class="td-post-category" href="/theo-dong-thoi-su/phap-luat" rel="tag"> 
+                                        Pháp luật   
+                                        </a> 
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="entry-title td-module-title">
+                                        <a href="/nguoi-thanh-nien-ngoi-khoc" rel="bookmark" title="">Người thanh niên ngồi khóc</a>
+                                    </h3>
+
+                                    <div class="td-module-meta-info">
+                                        <span class="td-post-date">
+                                            <time class="entry-date updated td-module-date" datetime="2017-12-18T16:08:09+00:00">Thứ ba, 21 08 2018</time>
+                                        </span>
+                                    </div>
+                                    <div class="td-excerpt">Trên màn hình siêu âm, trái tim như con ngựa bất kham cứ lồng lên một cách cuồng loạn. Đây là một điều không hề bình thường chút nào bởi cách đó một tháng, nó còn ngoan ngoãn lắm. Vừa dán mắt lên màn hình siêu âm, tôi vừa hỏi bệnh người thanh niên:
+
+</div>
+                                </div>
+                            </div>
+
+                            <div class="page-nav td-pb-padding-side">
+                                <a href="/theo-dong-thoi-su/page/8"><i class="td-icon-menu-left"></i> Trang trước</a>  
+                                <a href="/theo-dong-thoi-su/page/10">Trang kế <i class="td-icon-menu-right"></i></a> 
                             </div>
                         </div>
                     </div>
@@ -1123,37 +1359,7 @@
                 });
             }
         });
-        (function () {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = '';
-                jQuery.get(path, function (data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path = '';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            //jQuery('head').append('<style>' + arr_splits[i] + '</style>');
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();
+    
     </script>
     <div id="tdw-css-writer" style="display: none" class="tdw-drag-dialog tdc-window-sidebar">
         <header>

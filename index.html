@@ -372,13 +372,13 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li id="menu-item-0" class="menu-item-0">
-                                        <a href="/kinh-te">Kinh Tế</a>
+                                        <a href="/theo-dong-thoi-su/kinh-te">Kinh Tế</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/xa-hoi">Xã Hội</a>
+                                        <a href="/theo-dong-thoi-su/xa-hoi">Xã Hội</a>
                                     </li>
                                     <li class="menu-item-0">
-                                        <a href="/phap-luat">Pháp Luật</a>
+                                        <a href="/theo-dong-thoi-su/phap-luat">Pháp Luật</a>
                                     </li>
     
                                 </ul>
@@ -1829,7 +1829,7 @@
                                         </h3>
 
                                         <div class="td-module-meta-info">
-                                            <a href="/theo-dong-thoi-su.xa-hoi" class="td-post-category">  xã hội  </a>
+                                            <a href="/theo-dong-thoi-su.xa-hoi" class="td-post-category"> Xã hội  </a>
                                             <span class="td-post-author-name">
                                                 <a href="/assets/author/admin/"></a>
                                                 <span>-</span>
@@ -1850,7 +1850,7 @@
                                         </h3>
 
                                         <div class="td-module-meta-info">
-                                            <a href="/theo-dong-thoi-su.xa-hoi" class="td-post-category">  xã hội  </a>
+                                            <a href="/theo-dong-thoi-su.xa-hoi" class="td-post-category"> Xã hội  </a>
                                             <span class="td-post-author-name">
                                                 <a href="/assets/author/admin/"></a>
                                                 <span>-</span>
@@ -1871,7 +1871,7 @@
                                         </h3>
 
                                         <div class="td-module-meta-info">
-                                            <a href="/theo-dong-thoi-su.xa-hoi" class="td-post-category">  xã hội  </a>
+                                            <a href="/theo-dong-thoi-su.xa-hoi" class="td-post-category"> Xã hội  </a>
                                             <span class="td-post-author-name">
                                                 <a href="/assets/author/admin/"></a>
                                                 <span>-</span>
@@ -2151,39 +2151,7 @@
     <script type="text/javascript" src="/js/comment-reply.min.js?ver=3e3fa0d0"></script>
     <script type="text/javascript" src="/js/wp-embed.min.js?ver=3e3fa0d0"></script>
 
-    <script>
-        (function() {
-            var html_jquery_obj = jQuery('html');
-            if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
-                var path = '/assets/wp-content/themes/011/style.css';
-                jQuery.get(path, function(data) {
-                    var str_split_separator = '#td_css_split_separator';
-                    var arr_splits = data.split(str_split_separator);
-                    var arr_length = arr_splits.length;
-                    if (arr_length > 1) {
-                        var dir_path =
-                            '/assets/wp-content/themes/011';
-                        var splited_css = '';
-                        for (var i = 0; i < arr_length; i++) {
-                            if (i > 0) {
-                                arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
-                            }
-                            var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(
-                                str) {
-                                return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(
-                                    /^\s+|\s+$/gm, '');
-                            });
-                            splited_css += "<style>" + formated_str + "</style>";
-                        }
-                        var td_theme_css = jQuery('link#td-theme-css');
-                        if (td_theme_css.length) {
-                            td_theme_css.after(splited_css);
-                        }
-                    }
-                });
-            }
-        })();
-    </script>
+  
     <div id="tdw-css-writer" style="display:none" class="tdw-drag-dialog tdc-window-sidebar">
         <header>
             <a title="Editor" class="tdw-tab tdc-tab-active" href="#" data-tab-content="tdw-tab-editor">Edit with Live
